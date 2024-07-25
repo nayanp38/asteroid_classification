@@ -1,0 +1,629 @@
+2024-02-22 19:24:21,401 INFO    StreamThr :24976 [internal.py:wandb_internal():86] W&B internal server running at pid: 24976, started at: 2024-02-22 19:24:21.400791
+2024-02-22 19:24:21,402 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status
+2024-02-22 19:24:21,405 INFO    WriterThread:24976 [datastore.py:open_for_write():87] open: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\run-dzp54icy.wandb
+2024-02-22 19:24:21,407 DEBUG   SenderThread:24976 [sender.py:send():382] send: header
+2024-02-22 19:24:21,407 DEBUG   SenderThread:24976 [sender.py:send():382] send: run
+2024-02-22 19:24:21,577 INFO    SenderThread:24976 [dir_watcher.py:__init__():211] watching files in: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files
+2024-02-22 19:24:21,577 INFO    SenderThread:24976 [sender.py:_start_run_threads():1136] run started: dzp54icy with start time 1708647861.401786
+2024-02-22 19:24:21,590 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: check_version
+2024-02-22 19:24:21,590 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: check_version
+2024-02-22 19:24:21,666 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: run_start
+2024-02-22 19:24:21,681 DEBUG   HandlerThread:24976 [system_info.py:__init__():27] System info init
+2024-02-22 19:24:21,681 DEBUG   HandlerThread:24976 [system_info.py:__init__():42] System info init done
+2024-02-22 19:24:21,681 INFO    HandlerThread:24976 [system_monitor.py:start():194] Starting system monitor
+2024-02-22 19:24:21,681 INFO    SystemMonitor:24976 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-22 19:24:21,682 INFO    HandlerThread:24976 [system_monitor.py:probe():214] Collecting system info
+2024-02-22 19:24:21,687 INFO    SystemMonitor:24976 [interfaces.py:start():190] Started cpu monitoring
+2024-02-22 19:24:21,693 DEBUG   HandlerThread:24976 [system_info.py:probe():151] Probing system
+2024-02-22 19:24:21,693 INFO    SystemMonitor:24976 [interfaces.py:start():190] Started disk monitoring
+2024-02-22 19:24:21,704 INFO    SystemMonitor:24976 [interfaces.py:start():190] Started memory monitoring
+2024-02-22 19:24:21,715 INFO    SystemMonitor:24976 [interfaces.py:start():190] Started network monitoring
+2024-02-22 19:24:21,716 DEBUG   HandlerThread:24976 [gitlib.py:_init_repo():56] git repository is invalid
+2024-02-22 19:24:21,716 DEBUG   HandlerThread:24976 [system_info.py:probe():199] Probing system done
+2024-02-22 19:24:21,716 DEBUG   HandlerThread:24976 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.8.0', 'heartbeatAt': '2024-02-23T00:24:21.693807', 'startedAt': '2024-02-23T00:24:21.392876', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\Nayan_Patel\\PycharmProjects\\asteroid\\full_train.py', 'codePathLocal': 'full_train.py', 'codePath': 'full_train.py', 'host': 'HS-CND1361QN5', 'username': 'Nayan_Patel', 'executable': 'C:\\Users\\Nayan_Patel\\PycharmProjects\\asteroid\\venv\\Scripts\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1209.0, 'min': 0.0, 'max': 2419.0}, 'cpu_freq_per_core': [{'current': 2419.0, 'min': 0.0, 'max': 2419.0}], 'disk': {'/': {'total': 237.46124649047852, 'used': 208.27084350585938}}, 'memory': {'total': 15.68770980834961}}
+2024-02-22 19:24:21,716 INFO    HandlerThread:24976 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-22 19:24:21,716 INFO    HandlerThread:24976 [system_monitor.py:probe():227] Publishing system info
+2024-02-22 19:24:21,717 INFO    HandlerThread:24976 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-22 19:24:21,721 DEBUG   SenderThread:24976 [sender.py:send():382] send: files
+2024-02-22 19:24:21,722 INFO    SenderThread:24976 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-22 19:24:21,727 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-22 19:24:21,728 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: python_packages
+2024-02-22 19:24:21,728 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:24:21,729 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:24:21,730 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:24:22,082 DEBUG   SenderThread:24976 [sender.py:send():382] send: telemetry
+2024-02-22 19:24:22,134 INFO    wandb-upload_0:24976 [upload_job.py:push():131] Uploaded file C:\Users\NAYAN_~1\AppData\Local\Temp\tmpty06_mkawandb\9fkesjmb-wandb-metadata.json
+2024-02-22 19:24:22,599 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\wandb-metadata.json
+2024-02-22 19:24:22,599 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\requirements.txt
+2024-02-22 19:24:22,599 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:24,615 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:26,410 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:24:26,628 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:28,656 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:30,673 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:31,414 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:24:32,695 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:34,723 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:36,450 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:24:36,747 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:24:36,748 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:24:36,748 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:24:36,752 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:38,775 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:40,805 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:41,452 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:24:42,816 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:44,840 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:46,457 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:24:46,853 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:48,870 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:50,887 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:51,474 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:24:51,746 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:24:51,747 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:24:51,768 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:24:51,900 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\config.yaml
+2024-02-22 19:24:52,906 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:54,925 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:56,558 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:24:56,942 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:24:58,956 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:00,962 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:01,560 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:25:02,972 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:04,982 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:06,574 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:25:06,749 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:25:06,750 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:25:06,781 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:25:07,000 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:09,024 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:11,036 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:11,584 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:25:13,042 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:15,060 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:16,599 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:25:17,079 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:19,098 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:21,118 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:21,604 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:25:21,734 DEBUG   SystemMonitor:24976 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-22 19:25:21,735 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:25:21,761 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:25:21,761 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:25:21,799 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:25:23,120 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:25,143 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:26,611 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:25:27,155 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:29,173 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:31,179 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:31,621 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:25:33,197 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:35,213 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:36,630 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:25:36,834 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:25:36,843 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:25:36,843 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:25:37,243 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:39,272 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:41,280 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:41,640 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:25:43,296 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:45,305 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:46,663 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:25:47,329 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:49,350 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:51,367 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:51,664 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:25:51,738 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:25:51,833 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:25:51,834 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:25:51,855 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:25:53,391 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:55,400 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:56,668 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:25:57,411 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:25:59,420 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:01,446 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:01,667 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:26:03,459 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:05,475 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:06,669 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:26:06,845 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:26:06,846 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:26:06,867 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:26:07,490 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:09,518 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:11,524 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:11,681 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:26:13,544 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:15,552 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:16,690 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:26:17,556 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:19,579 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:21,581 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:21,690 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:26:21,741 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:26:21,868 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:26:21,869 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:26:21,869 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:26:23,617 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:25,629 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:26,690 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:26:27,640 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:29,660 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:31,679 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:31,705 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:26:33,689 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:35,716 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:36,725 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:26:36,900 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:26:36,901 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:26:36,904 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:26:37,743 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:39,761 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:41,725 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:26:41,784 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:43,796 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:45,821 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:46,732 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:26:47,829 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:49,843 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:51,745 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:26:51,746 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:26:51,856 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:51,922 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:26:51,922 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:26:51,923 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:26:53,863 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:55,881 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:56,747 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:26:57,890 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:26:59,894 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:01,753 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:27:01,914 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:03,940 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:05,949 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:06,760 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:27:06,923 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:27:06,933 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:27:06,934 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:27:07,968 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:09,991 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:11,760 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:27:12,015 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:14,027 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:16,045 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:16,775 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:27:18,069 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:20,097 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:21,754 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:27:21,779 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:27:21,933 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:27:21,944 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:27:21,944 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:27:22,126 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:24,133 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:26,142 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:26,783 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:27:28,148 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:30,157 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:31,799 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:27:32,179 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:34,207 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:36,234 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:36,804 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:27:37,015 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:27:37,016 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:27:37,017 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:27:38,252 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:40,260 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:41,822 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:27:42,273 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:44,276 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:46,296 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:46,839 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:27:48,298 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:50,304 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:51,754 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:27:51,844 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:27:52,025 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:27:52,025 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:27:52,026 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:27:52,322 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:54,339 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:56,364 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:27:56,847 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:27:58,392 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:00,418 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:01,860 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:28:02,430 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:04,442 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:06,447 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:06,870 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:28:07,033 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:28:07,047 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:28:07,047 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:28:08,466 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:10,478 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:11,883 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:28:12,479 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:14,484 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:16,521 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:16,890 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:28:18,537 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:20,555 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:21,769 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:28:21,911 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:28:22,051 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:28:22,052 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:28:22,055 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:28:22,585 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:24,600 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:26,612 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:26,945 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:28:28,624 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:30,639 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:31,951 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:28:32,666 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:34,671 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:36,699 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:36,951 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:28:37,062 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:28:37,063 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:28:37,083 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:28:38,706 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:40,724 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:41,953 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:28:42,732 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:44,744 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:46,760 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:46,962 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:28:48,768 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:50,785 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:51,782 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:28:51,971 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:28:52,075 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:28:52,075 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:28:52,100 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:28:52,811 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:54,833 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:56,852 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:28:56,974 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:28:58,867 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:00,891 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:01,973 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:29:02,913 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:04,932 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:06,960 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:06,992 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:29:07,086 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:29:07,086 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:29:07,106 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:29:08,984 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:10,996 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:12,019 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:29:13,009 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:15,028 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:17,023 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:29:17,054 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:19,077 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:21,102 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:21,785 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:29:22,035 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:29:22,112 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:29:22,114 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:29:22,116 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:29:23,130 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:25,148 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:27,036 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:29:27,153 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:29,166 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:31,182 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:32,037 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:29:33,205 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:35,236 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:37,067 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:29:37,115 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:29:37,136 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:29:37,137 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:29:37,255 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:39,262 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:41,280 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:42,077 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:29:43,304 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:45,320 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:47,095 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:29:47,335 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:49,364 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:51,385 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:51,789 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:29:52,098 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:29:52,131 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:29:52,153 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:29:52,155 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:29:53,407 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:55,427 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:57,131 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:29:57,433 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:29:59,458 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:01,479 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:02,146 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:30:03,494 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:05,519 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:07,153 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:30:07,156 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:30:07,159 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:30:07,160 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:30:07,531 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:09,547 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:11,566 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:12,171 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:30:13,584 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:15,609 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:17,185 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:30:17,629 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:19,651 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:21,673 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:21,800 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:30:22,185 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:30:22,186 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:30:22,192 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:30:22,259 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:30:23,699 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:25,725 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:27,281 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:30:27,742 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:29,753 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:31,776 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:32,289 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:30:33,797 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:35,810 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:37,194 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:30:37,195 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:30:37,195 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:30:37,323 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:30:37,828 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:39,846 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:41,869 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:42,354 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:30:43,879 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:45,904 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:47,362 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:30:47,923 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:49,953 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:51,799 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:30:51,957 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:52,204 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:30:52,205 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:30:52,207 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:30:52,386 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:30:53,981 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:55,998 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:30:57,385 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:30:58,016 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:00,044 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:02,068 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:02,406 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:31:04,076 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:06,094 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:07,216 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:31:07,217 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:31:07,230 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:31:07,406 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:31:08,129 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:10,151 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:12,182 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:12,439 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:31:14,219 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:16,243 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:17,452 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:31:18,276 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:20,321 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:21,804 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:31:22,232 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:31:22,233 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:31:22,251 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:31:22,349 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:22,458 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:31:24,361 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:26,409 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:27,462 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:31:28,432 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:30,466 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:32,485 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:31:32,490 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:34,509 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:36,532 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:37,263 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:31:37,264 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:31:37,265 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:31:37,501 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:31:38,557 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:40,584 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:42,511 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:31:42,617 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:44,638 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:46,656 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:47,514 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:31:48,679 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:50,715 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:51,809 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:31:52,273 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:31:52,274 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:31:52,286 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:31:52,519 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:31:52,746 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:54,786 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:56,806 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:31:57,523 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:31:58,852 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:32:00,888 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:32:02,544 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:32:02,910 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:32:04,932 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:32:06,961 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:32:07,289 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:32:07,290 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:32:07,291 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:32:07,548 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:32:08,983 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:32:11,005 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:32:12,638 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:32:17,701 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:32:21,823 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:32:22,293 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:32:22,294 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:32:22,309 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:32:23,389 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:32:28,443 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:32:33,484 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:32:37,312 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:32:37,312 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:32:37,312 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:32:39,397 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:32:44,439 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:32:49,491 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:32:51,831 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:32:52,327 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:32:52,328 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:32:52,328 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:32:55,433 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:33:00,478 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:33:05,525 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:33:05,646 DEBUG   SenderThread:24976 [sender.py:send():382] send: exit
+2024-02-22 19:33:05,646 INFO    SenderThread:24976 [sender.py:send_exit():589] handling exit code: 255
+2024-02-22 19:33:05,646 INFO    SenderThread:24976 [sender.py:send_exit():591] handling runtime: 523
+2024-02-22 19:33:05,647 INFO    SenderThread:24976 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 19:33:05,647 INFO    SenderThread:24976 [sender.py:send_exit():597] send defer
+2024-02-22 19:33:05,647 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:05,648 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-22 19:33:05,648 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:05,648 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-22 19:33:05,648 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 1
+2024-02-22 19:33:05,648 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:05,648 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-22 19:33:05,648 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:05,648 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-22 19:33:05,648 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 2
+2024-02-22 19:33:05,648 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:05,648 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-22 19:33:05,648 INFO    HandlerThread:24976 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-22 19:33:05,649 INFO    HandlerThread:24976 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-22 19:33:05,649 INFO    HandlerThread:24976 [interfaces.py:finish():202] Joined disk monitor
+2024-02-22 19:33:05,649 DEBUG   SystemMonitor:24976 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-22 19:33:05,649 DEBUG   SystemMonitor:24976 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-22 19:33:05,649 INFO    HandlerThread:24976 [interfaces.py:finish():202] Joined memory monitor
+2024-02-22 19:33:05,650 INFO    HandlerThread:24976 [interfaces.py:finish():202] Joined network monitor
+2024-02-22 19:33:05,650 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:05,650 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-22 19:33:05,650 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 3
+2024-02-22 19:33:05,650 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:05,651 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-22 19:33:05,653 DEBUG   SenderThread:24976 [sender.py:send():382] send: stats
+2024-02-22 19:33:05,653 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:05,653 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-22 19:33:05,653 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 4
+2024-02-22 19:33:05,654 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:05,654 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-22 19:33:05,654 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:05,654 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-22 19:33:05,654 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 5
+2024-02-22 19:33:05,654 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:05,654 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-22 19:33:05,655 DEBUG   SenderThread:24976 [sender.py:send():382] send: summary
+2024-02-22 19:33:05,655 INFO    SenderThread:24976 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 19:33:05,656 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:05,656 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-22 19:33:05,656 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 6
+2024-02-22 19:33:05,656 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:05,656 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-22 19:33:05,656 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:05,656 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-22 19:33:05,656 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 7
+2024-02-22 19:33:05,656 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:33:05,657 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:05,657 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-22 19:33:05,657 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:05,657 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-22 19:33:06,607 INFO    Thread-16 :24976 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\wandb-summary.json
+2024-02-22 19:33:06,655 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 19:33:07,694 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 8
+2024-02-22 19:33:07,694 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 19:33:07,694 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:07,695 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-22 19:33:07,695 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:07,695 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-22 19:33:07,695 INFO    SenderThread:24976 [job_builder.py:build():296] Attempting to build job artifact
+2024-02-22 19:33:07,696 INFO    SenderThread:24976 [job_builder.py:_get_source_type():437] no source found
+2024-02-22 19:33:07,696 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 9
+2024-02-22 19:33:07,696 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:07,696 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-22 19:33:07,697 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:07,697 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-22 19:33:07,697 INFO    SenderThread:24976 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-22 19:33:08,625 INFO    SenderThread:24976 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:33:08,625 INFO    SenderThread:24976 [dir_watcher.py:finish():388] scan: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files
+2024-02-22 19:33:08,625 INFO    SenderThread:24976 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\config.yaml config.yaml
+2024-02-22 19:33:08,626 INFO    SenderThread:24976 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log output.log
+2024-02-22 19:33:08,626 INFO    SenderThread:24976 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\requirements.txt requirements.txt
+2024-02-22 19:33:08,630 INFO    SenderThread:24976 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\wandb-metadata.json wandb-metadata.json
+2024-02-22 19:33:08,631 INFO    SenderThread:24976 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\wandb-summary.json wandb-summary.json
+2024-02-22 19:33:08,632 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 10
+2024-02-22 19:33:08,632 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:08,632 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-22 19:33:08,633 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:08,633 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-22 19:33:08,633 INFO    SenderThread:24976 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-22 19:33:08,670 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 19:33:08,670 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 19:33:09,021 INFO    wandb-upload_0:24976 [upload_job.py:push():131] Uploaded file C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\config.yaml
+2024-02-22 19:33:09,095 INFO    wandb-upload_2:24976 [upload_job.py:push():131] Uploaded file C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\requirements.txt
+2024-02-22 19:33:09,108 INFO    wandb-upload_3:24976 [upload_job.py:push():131] Uploaded file C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\wandb-summary.json
+2024-02-22 19:33:09,318 INFO    wandb-upload_1:24976 [upload_job.py:push():131] Uploaded file C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\files\output.log
+2024-02-22 19:33:09,525 INFO    Thread-15 :24976 [sender.py:transition_state():617] send defer: 11
+2024-02-22 19:33:09,525 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:09,526 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-22 19:33:09,526 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:09,526 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-22 19:33:09,526 INFO    SenderThread:24976 [file_pusher.py:join():181] waiting for file pusher
+2024-02-22 19:33:09,527 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 12
+2024-02-22 19:33:09,527 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:09,527 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-22 19:33:09,527 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:09,528 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-22 19:33:09,528 INFO    SenderThread:24976 [file_stream.py:finish():595] file stream finish called
+2024-02-22 19:33:09,660 INFO    SenderThread:24976 [file_stream.py:finish():599] file stream finish is done
+2024-02-22 19:33:09,661 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 13
+2024-02-22 19:33:09,661 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:09,661 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-22 19:33:09,661 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:09,661 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-22 19:33:09,661 INFO    SenderThread:24976 [sender.py:transition_state():617] send defer: 14
+2024-02-22 19:33:09,662 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 19:33:09,662 INFO    HandlerThread:24976 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-22 19:33:09,662 DEBUG   SenderThread:24976 [sender.py:send():382] send: final
+2024-02-22 19:33:09,662 DEBUG   SenderThread:24976 [sender.py:send():382] send: footer
+2024-02-22 19:33:09,662 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: defer
+2024-02-22 19:33:09,662 INFO    SenderThread:24976 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-22 19:33:09,663 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 19:33:09,663 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 19:33:09,663 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: server_info
+2024-02-22 19:33:09,663 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-22 19:33:09,664 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-22 19:33:09,664 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:33:09,664 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 19:33:09,664 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 19:33:09,664 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: server_info
+2024-02-22 19:33:09,666 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: job_info
+2024-02-22 19:33:09,696 DEBUG   SenderThread:24976 [sender.py:send_request():409] send_request: job_info
+2024-02-22 19:33:09,696 INFO    MainThread:24976 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-02-22 19:33:09,696 INFO    MainThread:24976 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-02-22 19:33:09,696 INFO    MainThread:24976 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-02-22 19:33:09,697 DEBUG   HandlerThread:24976 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-22 19:33:09,697 INFO    HandlerThread:24976 [handler.py:finish():869] shutting down handler
+2024-02-22 19:33:10,679 INFO    WriterThread:24976 [datastore.py:close():296] close: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_192421-dzp54icy\run-dzp54icy.wandb
+2024-02-22 19:33:10,710 INFO    SenderThread:24976 [sender.py:finish():1572] shutting down sender
+2024-02-22 19:33:10,710 INFO    SenderThread:24976 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-22 19:33:10,710 INFO    SenderThread:24976 [file_pusher.py:join():181] waiting for file pusher

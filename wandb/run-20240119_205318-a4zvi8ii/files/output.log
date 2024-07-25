@@ -1,0 +1,20 @@
+['A', 'B', 'C', 'Cg', 'Ch', 'D', 'E', 'K', 'L', 'M', 'O', 'P', 'Q', 'R', 'S', 'V', 'X', 'Z']
+{'A': 0, 'B': 1, 'C': 2, 'Cg': 3, 'Ch': 4, 'D': 5, 'E': 6, 'K': 7, 'L': 8, 'M': 9, 'O': 10, 'P': 11, 'Q': 12, 'R': 13, 'S': 14, 'V': 15, 'X': 16, 'Z': 17}
+{0: 'A', 1: 'B', 2: 'C', 3: 'Cg', 4: 'Ch', 5: 'D', 6: 'E', 7: 'K', 8: 'L', 9: 'M', 10: 'O', 11: 'P', 12: 'Q', 13: 'R', 14: 'S', 15: 'V', 16: 'X', 17: 'Z'}
+number of asteroid types: 18
+Traceback (most recent call last):
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\train.py", line 57, in <module>
+    outputs = model(images)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\model.py", line 23, in forward
+    x = self.fc1(x)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (4x14400 and 32768x18)

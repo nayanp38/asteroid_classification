@@ -1,0 +1,1471 @@
+2024-02-22 19:40:48,561 INFO    StreamThr :27588 [internal.py:wandb_internal():86] W&B internal server running at pid: 27588, started at: 2024-02-22 19:40:48.560216
+2024-02-22 19:40:48,563 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status
+2024-02-22 19:40:48,565 INFO    WriterThread:27588 [datastore.py:open_for_write():87] open: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\run-679mt3ku.wandb
+2024-02-22 19:40:48,568 DEBUG   SenderThread:27588 [sender.py:send():382] send: header
+2024-02-22 19:40:48,568 DEBUG   SenderThread:27588 [sender.py:send():382] send: run
+2024-02-22 19:40:48,759 INFO    SenderThread:27588 [dir_watcher.py:__init__():211] watching files in: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files
+2024-02-22 19:40:48,759 INFO    SenderThread:27588 [sender.py:_start_run_threads():1136] run started: 679mt3ku with start time 1708648848.562531
+2024-02-22 19:40:48,768 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: check_version
+2024-02-22 19:40:48,769 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: check_version
+2024-02-22 19:40:48,853 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: run_start
+2024-02-22 19:40:48,867 DEBUG   HandlerThread:27588 [system_info.py:__init__():27] System info init
+2024-02-22 19:40:48,867 DEBUG   HandlerThread:27588 [system_info.py:__init__():42] System info init done
+2024-02-22 19:40:48,867 INFO    HandlerThread:27588 [system_monitor.py:start():194] Starting system monitor
+2024-02-22 19:40:48,867 INFO    SystemMonitor:27588 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-22 19:40:48,868 INFO    HandlerThread:27588 [system_monitor.py:probe():214] Collecting system info
+2024-02-22 19:40:48,876 INFO    SystemMonitor:27588 [interfaces.py:start():190] Started cpu monitoring
+2024-02-22 19:40:48,882 DEBUG   HandlerThread:27588 [system_info.py:probe():151] Probing system
+2024-02-22 19:40:48,883 INFO    SystemMonitor:27588 [interfaces.py:start():190] Started disk monitoring
+2024-02-22 19:40:48,894 INFO    SystemMonitor:27588 [interfaces.py:start():190] Started memory monitoring
+2024-02-22 19:40:48,906 INFO    SystemMonitor:27588 [interfaces.py:start():190] Started network monitoring
+2024-02-22 19:40:48,906 DEBUG   HandlerThread:27588 [gitlib.py:_init_repo():56] git repository is invalid
+2024-02-22 19:40:48,906 DEBUG   HandlerThread:27588 [system_info.py:probe():199] Probing system done
+2024-02-22 19:40:48,907 DEBUG   HandlerThread:27588 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.8.0', 'heartbeatAt': '2024-02-23T00:40:48.882651', 'startedAt': '2024-02-23T00:40:48.549901', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\Nayan_Patel\\PycharmProjects\\asteroid\\full_train.py', 'codePathLocal': 'full_train.py', 'codePath': 'full_train.py', 'host': 'HS-CND1361QN5', 'username': 'Nayan_Patel', 'executable': 'C:\\Users\\Nayan_Patel\\PycharmProjects\\asteroid\\venv\\Scripts\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2419.0, 'min': 0.0, 'max': 2419.0}, 'cpu_freq_per_core': [{'current': 2419.0, 'min': 0.0, 'max': 2419.0}], 'disk': {'/': {'total': 237.46124649047852, 'used': 208.28340530395508}}, 'memory': {'total': 15.68770980834961}}
+2024-02-22 19:40:48,907 INFO    HandlerThread:27588 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-22 19:40:48,907 INFO    HandlerThread:27588 [system_monitor.py:probe():227] Publishing system info
+2024-02-22 19:40:48,908 INFO    HandlerThread:27588 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-22 19:40:48,912 DEBUG   SenderThread:27588 [sender.py:send():382] send: files
+2024-02-22 19:40:48,913 INFO    SenderThread:27588 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-22 19:40:48,917 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-22 19:40:48,918 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: python_packages
+2024-02-22 19:40:48,918 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:40:48,919 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:40:48,919 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:40:49,025 DEBUG   SenderThread:27588 [sender.py:send():382] send: telemetry
+2024-02-22 19:40:49,367 INFO    wandb-upload_0:27588 [upload_job.py:push():131] Uploaded file C:\Users\NAYAN_~1\AppData\Local\Temp\tmpi39vxap6wandb\5jqqe84k-wandb-metadata.json
+2024-02-22 19:40:49,771 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\requirements.txt
+2024-02-22 19:40:49,772 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\wandb-metadata.json
+2024-02-22 19:40:54,064 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:40:59,109 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:41:03,932 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:41:03,933 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:41:03,933 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:41:05,078 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:41:10,128 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:41:15,181 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:41:18,941 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:41:18,942 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:41:18,943 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:41:21,049 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:41:22,058 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\config.yaml
+2024-02-22 19:41:26,179 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:41:31,212 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:41:33,952 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:41:33,952 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:41:33,953 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:41:37,084 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:41:42,140 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:41:47,183 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:41:48,917 DEBUG   SystemMonitor:27588 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-22 19:41:48,917 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:41:48,949 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:41:48,949 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:41:48,964 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:41:53,141 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:41:57,460 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:41:58,611 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:41:59,494 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:42:03,674 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:42:03,957 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:42:03,958 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:42:03,973 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:42:09,164 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:42:14,207 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:42:18,932 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:42:18,977 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:42:18,977 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:42:18,979 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:42:20,131 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:42:25,182 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:42:30,242 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:42:33,986 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:42:33,987 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:42:33,987 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:42:36,129 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:42:41,169 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:42:46,191 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:42:48,941 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:42:49,003 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:42:49,004 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:42:49,004 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:42:52,142 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:42:57,161 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:43:02,209 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:43:04,012 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:43:04,027 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:43:04,027 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:43:08,124 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:43:13,157 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:43:18,205 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:43:18,956 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:43:19,018 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:43:19,034 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:43:19,035 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:43:23,295 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:43:23,575 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:43:28,605 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:43:33,652 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:43:34,028 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:43:34,060 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:43:34,061 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:43:39,149 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:43:44,183 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:43:48,964 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:43:49,043 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:43:49,075 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:43:49,076 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:43:50,138 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:43:55,208 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:44:00,262 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:44:04,054 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:44:04,087 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:44:04,087 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:44:06,209 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:44:11,245 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:44:16,296 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:44:18,976 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:44:19,070 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:44:19,102 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:44:19,102 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:44:22,285 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:44:27,336 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:44:32,397 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:44:34,085 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:44:34,118 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:44:34,118 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:44:38,244 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:44:43,282 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:44:48,348 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:44:48,989 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:44:49,098 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:44:49,131 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:44:49,132 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:44:54,071 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:44:54,227 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:44:59,123 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:45:04,112 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:45:04,144 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:45:04,145 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:45:09,045 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:45:14,104 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:45:18,997 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:45:19,120 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:45:19,173 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 19:45:19,174 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:45:19,174 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 19:45:22,654 INFO    SenderThread:27588 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Nayan_Patel\AppData\Local\Programs\Python\Python38\lib\socket.py", line 914, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connectionpool.py", line 1096, in _validate_conn
+    conn.connect()
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001C582109A60>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C582109A60>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C582109A60>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+2024-02-22 19:45:24,216 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:45:29,267 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:45:34,130 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:45:35,095 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:45:37,902 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:45:39,341 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:45:40,149 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:45:44,375 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:45:45,186 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:45:49,013 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:45:49,136 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:45:50,190 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:45:54,461 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:45:55,219 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:45:59,498 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:46:00,234 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:46:04,151 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:46:06,202 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:46:09,578 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:46:11,249 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:46:14,633 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:46:16,298 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:46:19,029 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:46:19,137 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:46:22,204 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:46:24,720 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:46:27,227 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:46:29,741 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:46:32,270 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:46:34,143 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:46:36,487 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:46:37,766 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:46:39,837 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:46:42,807 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:46:44,879 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:46:47,864 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:46:49,037 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:46:49,147 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:46:53,260 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:46:54,963 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:46:58,299 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:47:00,006 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:47:03,346 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:47:04,163 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:47:09,235 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:47:10,078 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:47:14,291 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:47:15,129 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:47:19,044 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:47:19,167 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:47:20,228 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:47:25,208 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:47:25,271 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:47:30,258 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:47:30,305 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:47:34,168 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:47:36,239 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:47:39,316 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:47:41,286 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:47:44,362 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:47:46,329 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:47:49,055 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:47:49,206 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:47:52,262 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:47:54,475 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:47:57,361 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:47:59,526 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:48:02,426 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:48:04,200 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:48:07,540 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:48:08,492 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:48:09,632 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:48:12,586 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:48:14,668 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:48:17,629 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:48:19,065 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:48:19,206 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:48:23,281 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:48:24,766 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:48:28,346 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:48:29,809 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:48:33,391 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:48:34,214 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:48:39,303 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:48:39,895 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:48:44,336 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:48:44,938 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:48:49,089 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:48:49,241 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:48:50,270 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:48:55,035 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:48:55,316 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:00,069 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:49:00,353 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:04,249 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:49:06,292 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:10,195 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:49:11,340 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:15,256 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:49:16,389 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:19,097 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:49:19,100 WARNING FileStreamThread:27588 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: ('Connection aborted.', ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x000001C581E6B790>>, timeout=180), args: ('https://api.wandb.ai/files/nayanpatel0507/asteroid/679mt3ku/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 15, 'content': ['{"system.disk.\\\\.usagePercent": 87.7, "system.disk.\\\\.usageGB": 208.31, "system.disk.in": 582.12, "system.disk.out": 954.37, "system.cpu": 23.91, "system.cpu.0.cpu_percent": 44.17, "system.cpu.1.cpu_percent": 31.96, "system.cpu.2.cpu_percent": 43.77, "system.cpu.3.cpu_percent": 57.85, "system.cpu.4.cpu_percent": 20.06, "system.cpu.5.cpu_percent": 26.57, "system.cpu.6.cpu_percent": 32.38, "system.cpu.7.cpu_percent": 35.67, "system.proc.cpu.threads": 22, "system.network.sent": -357011458.53, "system.network.recv": -4291622926.33, "system.proc.memory.availableMB": 2854.89, "system.memory": 82.22, "system.proc.memory.rssMB": 972.31, "system.proc.memory.percent": 6.05, "_wandb": true, "_timestamp": 1708649359.096836, "_runtime": 510.534305}']}}, 'dropped': 0}}
+2024-02-22 19:49:19,256 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:49:22,285 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:24,362 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:49:27,332 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:29,394 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:49:32,377 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:34,259 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:49:38,289 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:39,478 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:49:41,477 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:49:43,565 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:44,522 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:49:48,596 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:49,104 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:49:49,108 WARNING FileStreamThread:27588 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: ('Connection aborted.', ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x000001C581E6B790>>, timeout=180), args: ('https://api.wandb.ai/files/nayanpatel0507/asteroid/679mt3ku/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 16, 'content': ['{"system.cpu": 27.13, "system.cpu.0.cpu_percent": 40.6, "system.cpu.1.cpu_percent": 28.31, "system.cpu.2.cpu_percent": 33.23, "system.cpu.3.cpu_percent": 43.48, "system.cpu.4.cpu_percent": 25.97, "system.cpu.5.cpu_percent": 31.51, "system.cpu.6.cpu_percent": 34.4, "system.cpu.7.cpu_percent": 41.5, "system.proc.cpu.threads": 22, "system.disk.\\\\.usagePercent": 87.7, "system.disk.\\\\.usageGB": 208.31, "system.disk.in": 596.25, "system.disk.out": 983.88, "system.network.sent": -356970990.87, "system.network.recv": -4289950751.8, "system.proc.memory.availableMB": 2768.24, "system.memory": 82.77, "system.proc.memory.rssMB": 972.19, "system.proc.memory.percent": 6.05, "_wandb": true, "_timestamp": 1708649389.104068, "_runtime": 540.541537}']}, 'output.log': {'offset': 6, 'content': ['2024-02-23T00:49:40.727998 Epoch [5/15], Train Loss: 0.0293, Val Loss: 0.0475\n']}}, 'dropped': 0}}
+2024-02-22 19:49:49,263 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:49:54,319 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:54,603 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:49:59,375 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:49:59,660 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:50:04,279 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:50:05,294 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:50:09,749 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:50:10,337 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:50:14,795 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:50:15,369 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:50:19,121 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:50:19,123 WARNING FileStreamThread:27588 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: ('Connection aborted.', ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x000001C581E6B790>>, timeout=180), args: ('https://api.wandb.ai/files/nayanpatel0507/asteroid/679mt3ku/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 17, 'content': ['{"system.disk.\\\\.usagePercent": 87.7, "system.disk.\\\\.usageGB": 208.31, "system.disk.in": 600.41, "system.disk.out": 1001.87, "system.cpu": 26.33, "system.cpu.0.cpu_percent": 39.93, "system.cpu.1.cpu_percent": 25.37, "system.cpu.2.cpu_percent": 30.18, "system.cpu.3.cpu_percent": 38.89, "system.cpu.4.cpu_percent": 27.33, "system.cpu.5.cpu_percent": 35.57, "system.cpu.6.cpu_percent": 34.49, "system.cpu.7.cpu_percent": 43.11, "system.proc.cpu.threads": 22, "system.network.sent": -355221300.4, "system.network.recv": -4275949458.47, "system.proc.memory.availableMB": 2792.28, "system.memory": 82.62, "system.proc.memory.rssMB": 972.46, "system.proc.memory.percent": 6.05, "_wandb": true, "_timestamp": 1708649419.112675, "_runtime": 570.550144}']}}, 'dropped': 0}}
+2024-02-22 19:50:19,288 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:50:21,183 WARNING FileStreamThread:27588 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/nayanpatel0507/asteroid/679mt3ku/file_stream (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C58218EE50>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)")). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x000001C581E6B790>>, timeout=180), args: ('https://api.wandb.ai/files/nayanpatel0507/asteroid/679mt3ku/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 17, 'content': ['{"system.disk.\\\\.usagePercent": 87.7, "system.disk.\\\\.usageGB": 208.31, "system.disk.in": 600.41, "system.disk.out": 1001.87, "system.cpu": 26.33, "system.cpu.0.cpu_percent": 39.93, "system.cpu.1.cpu_percent": 25.37, "system.cpu.2.cpu_percent": 30.18, "system.cpu.3.cpu_percent": 38.89, "system.cpu.4.cpu_percent": 27.33, "system.cpu.5.cpu_percent": 35.57, "system.cpu.6.cpu_percent": 34.49, "system.cpu.7.cpu_percent": 43.11, "system.proc.cpu.threads": 22, "system.network.sent": -355221300.4, "system.network.recv": -4275949458.47, "system.proc.memory.availableMB": 2792.28, "system.memory": 82.62, "system.proc.memory.rssMB": 972.46, "system.proc.memory.percent": 6.05, "_wandb": true, "_timestamp": 1708649419.112675, "_runtime": 570.550144}']}}, 'dropped': 0}}
+2024-02-22 19:50:21,290 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:50:24,865 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:50:25,231 WARNING FileStreamThread:27588 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/nayanpatel0507/asteroid/679mt3ku/file_stream (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C5821AFAC0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)")). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x000001C581E6B790>>, timeout=180), args: ('https://api.wandb.ai/files/nayanpatel0507/asteroid/679mt3ku/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 17, 'content': ['{"system.disk.\\\\.usagePercent": 87.7, "system.disk.\\\\.usageGB": 208.31, "system.disk.in": 600.41, "system.disk.out": 1001.87, "system.cpu": 26.33, "system.cpu.0.cpu_percent": 39.93, "system.cpu.1.cpu_percent": 25.37, "system.cpu.2.cpu_percent": 30.18, "system.cpu.3.cpu_percent": 38.89, "system.cpu.4.cpu_percent": 27.33, "system.cpu.5.cpu_percent": 35.57, "system.cpu.6.cpu_percent": 34.49, "system.cpu.7.cpu_percent": 43.11, "system.proc.cpu.threads": 22, "system.network.sent": -355221300.4, "system.network.recv": -4275949458.47, "system.proc.memory.availableMB": 2792.28, "system.memory": 82.62, "system.proc.memory.rssMB": 972.46, "system.proc.memory.percent": 6.05, "_wandb": true, "_timestamp": 1708649419.112675, "_runtime": 570.550144}']}}, 'dropped': 0}}
+2024-02-22 19:50:26,334 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:50:29,926 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:50:31,401 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:50:34,300 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:50:34,664 WARNING FileStreamThread:27588 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/nayanpatel0507/asteroid/679mt3ku/file_stream (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C5821849D0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)")). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x000001C581E6B790>>, timeout=180), args: ('https://api.wandb.ai/files/nayanpatel0507/asteroid/679mt3ku/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 17, 'content': ['{"system.disk.\\\\.usagePercent": 87.7, "system.disk.\\\\.usageGB": 208.31, "system.disk.in": 600.41, "system.disk.out": 1001.87, "system.cpu": 26.33, "system.cpu.0.cpu_percent": 39.93, "system.cpu.1.cpu_percent": 25.37, "system.cpu.2.cpu_percent": 30.18, "system.cpu.3.cpu_percent": 38.89, "system.cpu.4.cpu_percent": 27.33, "system.cpu.5.cpu_percent": 35.57, "system.cpu.6.cpu_percent": 34.49, "system.cpu.7.cpu_percent": 43.11, "system.proc.cpu.threads": 22, "system.network.sent": -355221300.4, "system.network.recv": -4275949458.47, "system.proc.memory.availableMB": 2792.28, "system.memory": 82.62, "system.proc.memory.rssMB": 972.46, "system.proc.memory.percent": 6.05, "_wandb": true, "_timestamp": 1708649419.112675, "_runtime": 570.550144}']}}, 'dropped': 0}}
+2024-02-22 19:50:37,330 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:50:40,055 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:50:42,388 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:50:45,085 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:50:47,432 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:50:49,117 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:50:49,306 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:50:50,849 WARNING FileStreamThread:27588 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/nayanpatel0507/asteroid/679mt3ku/file_stream (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C5820F07C0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)")). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x000001C581E6B790>>, timeout=180), args: ('https://api.wandb.ai/files/nayanpatel0507/asteroid/679mt3ku/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 17, 'content': ['{"system.disk.\\\\.usagePercent": 87.7, "system.disk.\\\\.usageGB": 208.31, "system.disk.in": 600.41, "system.disk.out": 1001.87, "system.cpu": 26.33, "system.cpu.0.cpu_percent": 39.93, "system.cpu.1.cpu_percent": 25.37, "system.cpu.2.cpu_percent": 30.18, "system.cpu.3.cpu_percent": 38.89, "system.cpu.4.cpu_percent": 27.33, "system.cpu.5.cpu_percent": 35.57, "system.cpu.6.cpu_percent": 34.49, "system.cpu.7.cpu_percent": 43.11, "system.proc.cpu.threads": 22, "system.network.sent": -355221300.4, "system.network.recv": -4275949458.47, "system.proc.memory.availableMB": 2792.28, "system.memory": 82.62, "system.proc.memory.rssMB": 972.46, "system.proc.memory.percent": 6.05, "_wandb": true, "_timestamp": 1708649419.112675, "_runtime": 570.550144}']}}, 'dropped': 0}}
+2024-02-22 19:50:53,351 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:50:55,190 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:50:58,411 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:51:00,227 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:51:03,469 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:51:04,311 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:51:09,324 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:51:09,356 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:51:14,369 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:51:14,400 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:51:15,466 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:51:19,128 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:51:19,319 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:51:20,333 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:51:24,460 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:51:25,380 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:51:29,518 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:51:29,538 WARNING FileStreamThread:27588 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/nayanpatel0507/asteroid/679mt3ku/file_stream (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C5820E3880>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)")). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x000001C581E6B790>>, timeout=180), args: ('https://api.wandb.ai/files/nayanpatel0507/asteroid/679mt3ku/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 17, 'content': ['{"system.disk.\\\\.usagePercent": 87.7, "system.disk.\\\\.usageGB": 208.31, "system.disk.in": 600.41, "system.disk.out": 1001.87, "system.cpu": 26.33, "system.cpu.0.cpu_percent": 39.93, "system.cpu.1.cpu_percent": 25.37, "system.cpu.2.cpu_percent": 30.18, "system.cpu.3.cpu_percent": 38.89, "system.cpu.4.cpu_percent": 27.33, "system.cpu.5.cpu_percent": 35.57, "system.cpu.6.cpu_percent": 34.49, "system.cpu.7.cpu_percent": 43.11, "system.proc.cpu.threads": 22, "system.network.sent": -355221300.4, "system.network.recv": -4275949458.47, "system.proc.memory.availableMB": 2792.28, "system.memory": 82.62, "system.proc.memory.rssMB": 972.46, "system.proc.memory.percent": 6.05, "_wandb": true, "_timestamp": 1708649419.112675, "_runtime": 570.550144}']}}, 'dropped': 0}}
+2024-02-22 19:51:30,423 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:51:34,329 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:51:36,332 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:51:39,610 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:51:41,379 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:51:44,659 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:51:46,436 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:51:49,135 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:51:49,342 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:51:52,349 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:51:54,727 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:51:57,407 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:51:59,787 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:52:02,432 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:52:04,356 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:52:08,360 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:52:09,810 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:52:13,373 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:52:14,850 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:52:18,406 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:52:19,137 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:52:19,360 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:52:24,405 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:52:24,913 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:52:29,467 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:52:29,959 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:52:34,364 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:52:35,350 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:52:37,909 WARNING FileStreamThread:27588 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/nayanpatel0507/asteroid/679mt3ku/file_stream (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C582228040>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)")). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x000001C581E6B790>>, timeout=180), args: ('https://api.wandb.ai/files/nayanpatel0507/asteroid/679mt3ku/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 17, 'content': ['{"system.disk.\\\\.usagePercent": 87.7, "system.disk.\\\\.usageGB": 208.31, "system.disk.in": 600.41, "system.disk.out": 1001.87, "system.cpu": 26.33, "system.cpu.0.cpu_percent": 39.93, "system.cpu.1.cpu_percent": 25.37, "system.cpu.2.cpu_percent": 30.18, "system.cpu.3.cpu_percent": 38.89, "system.cpu.4.cpu_percent": 27.33, "system.cpu.5.cpu_percent": 35.57, "system.cpu.6.cpu_percent": 34.49, "system.cpu.7.cpu_percent": 43.11, "system.proc.cpu.threads": 22, "system.network.sent": -355221300.4, "system.network.recv": -4275949458.47, "system.proc.memory.availableMB": 2792.28, "system.memory": 82.62, "system.proc.memory.rssMB": 972.46, "system.proc.memory.percent": 6.05, "_wandb": true, "_timestamp": 1708649419.112675, "_runtime": 570.550144}']}}, 'dropped': 0}}
+2024-02-22 19:52:40,062 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:52:40,397 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:52:45,124 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:52:45,410 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:52:46,332 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:52:49,140 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:52:49,377 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:52:51,376 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:52:55,198 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:52:56,434 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:53:00,243 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:53:01,466 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:53:04,387 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:53:07,415 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:53:10,306 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:53:12,450 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:53:15,350 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:53:17,506 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:53:19,142 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:53:19,395 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:53:23,401 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:53:24,432 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:53:28,433 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:53:29,464 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:53:33,487 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:53:34,406 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:53:39,450 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:53:39,577 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:53:44,510 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:53:44,637 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:53:49,155 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:53:49,396 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:53:50,393 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:53:54,712 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:53:55,426 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:53:59,728 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:54:00,459 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:54:04,412 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:54:06,426 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:54:09,804 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:54:11,469 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:54:14,138 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:54:14,823 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:54:17,187 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:54:19,144 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:54:19,428 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:54:22,457 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:54:24,903 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:54:27,489 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:54:29,934 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:54:32,518 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:54:34,442 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:54:38,484 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:54:40,038 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:54:43,529 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:54:45,083 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:54:48,601 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:54:49,156 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:54:49,457 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:54:54,460 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:54:55,172 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:54:59,503 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:55:00,193 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:55:04,469 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:55:05,466 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:55:10,266 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:55:10,489 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:55:15,309 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:55:15,534 WARNING FileStreamThread:27588 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/nayanpatel0507/asteroid/679mt3ku/file_stream (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C5820E3550>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)")). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x000001C581E6B790>>, timeout=180), args: ('https://api.wandb.ai/files/nayanpatel0507/asteroid/679mt3ku/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 17, 'content': ['{"system.disk.\\\\.usagePercent": 87.7, "system.disk.\\\\.usageGB": 208.31, "system.disk.in": 600.41, "system.disk.out": 1001.87, "system.cpu": 26.33, "system.cpu.0.cpu_percent": 39.93, "system.cpu.1.cpu_percent": 25.37, "system.cpu.2.cpu_percent": 30.18, "system.cpu.3.cpu_percent": 38.89, "system.cpu.4.cpu_percent": 27.33, "system.cpu.5.cpu_percent": 35.57, "system.cpu.6.cpu_percent": 34.49, "system.cpu.7.cpu_percent": 43.11, "system.proc.cpu.threads": 22, "system.network.sent": -355221300.4, "system.network.recv": -4275949458.47, "system.proc.memory.availableMB": 2792.28, "system.memory": 82.62, "system.proc.memory.rssMB": 972.46, "system.proc.memory.percent": 6.05, "_wandb": true, "_timestamp": 1708649419.112675, "_runtime": 570.550144}']}}, 'dropped': 0}}
+2024-02-22 19:55:15,548 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:55:19,162 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:55:19,463 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:55:21,479 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:55:25,408 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:55:26,533 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:55:30,451 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:55:31,576 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:55:34,471 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:55:37,513 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:55:39,560 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:55:42,569 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:55:44,628 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:55:45,090 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:55:48,178 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:55:49,163 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:55:49,478 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:55:53,518 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:55:54,719 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:55:58,568 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:55:59,759 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:56:03,611 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:56:04,485 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:56:09,549 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:56:09,829 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:56:14,883 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:56:14,888 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:56:19,176 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:56:19,478 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:56:20,493 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:56:24,966 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:56:25,523 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:56:29,978 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:56:30,539 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:56:34,488 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:56:36,500 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:56:40,060 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:56:41,535 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:56:45,120 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:56:46,580 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:56:49,193 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:56:49,503 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:56:52,529 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:56:55,209 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:56:57,573 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:57:00,250 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:57:02,625 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:57:04,510 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:57:08,558 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:57:10,368 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:57:13,605 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:57:15,401 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:57:17,496 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:57:19,205 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:57:19,206 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:57:19,522 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:57:24,565 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:57:25,516 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:57:29,622 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:57:30,571 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:57:34,527 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:57:35,541 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:57:39,637 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:57:40,587 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:57:44,698 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:57:45,647 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:57:49,211 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:57:49,530 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:57:51,560 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:57:54,797 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:57:56,605 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:57:59,850 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:58:01,673 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:58:04,543 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:58:07,561 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:58:09,965 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:58:12,616 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:58:15,010 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:58:17,662 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:58:19,217 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:58:19,550 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:58:23,593 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:58:25,087 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:58:28,636 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:58:30,143 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:58:33,665 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:58:34,562 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:58:39,598 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:58:40,213 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:58:44,669 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:58:45,259 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:58:49,231 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:58:49,565 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:58:50,576 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:58:55,326 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:58:55,596 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:58:58,533 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 19:59:00,367 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:59:01,401 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:59:04,583 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:59:06,600 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:59:10,461 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:59:11,637 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:59:15,504 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:59:16,695 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:59:19,246 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:59:19,579 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:59:22,607 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:59:24,594 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:59:27,629 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:59:29,614 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:59:32,637 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:59:34,578 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:59:38,611 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:59:39,670 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:59:43,652 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:59:44,714 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:59:48,704 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:59:49,257 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 19:59:49,574 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 19:59:54,629 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:59:54,820 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 19:59:59,677 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 19:59:59,868 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:00:04,580 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:00:05,590 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:00:09,957 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:00:10,652 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:00:10,978 WARNING FileStreamThread:27588 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/nayanpatel0507/asteroid/679mt3ku/file_stream (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C5821AF9A0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)")). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x000001C581E6B790>>, timeout=180), args: ('https://api.wandb.ai/files/nayanpatel0507/asteroid/679mt3ku/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 17, 'content': ['{"system.disk.\\\\.usagePercent": 87.7, "system.disk.\\\\.usageGB": 208.31, "system.disk.in": 600.41, "system.disk.out": 1001.87, "system.cpu": 26.33, "system.cpu.0.cpu_percent": 39.93, "system.cpu.1.cpu_percent": 25.37, "system.cpu.2.cpu_percent": 30.18, "system.cpu.3.cpu_percent": 38.89, "system.cpu.4.cpu_percent": 27.33, "system.cpu.5.cpu_percent": 35.57, "system.cpu.6.cpu_percent": 34.49, "system.cpu.7.cpu_percent": 43.11, "system.proc.cpu.threads": 22, "system.network.sent": -355221300.4, "system.network.recv": -4275949458.47, "system.proc.memory.availableMB": 2792.28, "system.memory": 82.62, "system.proc.memory.rssMB": 972.46, "system.proc.memory.percent": 6.05, "_wandb": true, "_timestamp": 1708649419.112675, "_runtime": 570.550144}']}}, 'dropped': 0}}
+2024-02-22 20:00:15,029 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:00:15,708 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:00:19,261 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 20:00:19,577 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:00:21,583 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:00:25,097 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:00:27,365 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:00:28,373 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 20:00:30,130 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:00:32,413 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:00:34,587 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:00:37,617 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:00:40,204 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:00:42,678 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:00:45,249 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:00:47,721 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:00:49,268 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 20:00:49,599 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:00:53,654 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:00:55,351 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:00:58,727 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:01:00,409 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:01:03,785 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:01:04,610 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:01:09,630 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:01:10,489 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:01:14,651 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:01:15,522 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:01:19,273 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 20:01:19,604 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:01:20,619 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:01:24,598 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:01:25,663 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:01:29,615 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:01:30,693 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:01:34,611 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:01:36,625 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:01:39,719 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:01:41,661 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:01:44,760 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:01:46,719 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:01:49,288 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 20:01:49,621 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:01:52,654 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:01:54,873 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:01:57,942 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:01:59,360 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 20:01:59,899 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:02:02,973 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:02:04,626 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:02:08,653 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:02:09,955 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:02:13,680 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:02:14,996 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:02:18,711 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:02:19,301 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 20:02:19,618 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:02:24,661 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:02:25,067 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:02:29,709 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:02:30,088 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:02:34,630 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:02:35,632 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:02:40,133 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:02:40,673 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:02:45,192 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:02:45,716 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:02:49,306 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 20:02:49,638 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:02:51,650 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:02:55,284 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:02:56,697 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:03:00,294 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:03:01,734 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:03:04,650 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:03:07,666 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:03:10,410 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:03:12,711 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:03:15,434 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:03:17,754 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:03:19,310 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 20:03:19,657 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:03:23,702 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:03:25,544 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:03:27,247 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 20:03:29,701 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:03:30,586 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:03:34,661 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:03:35,677 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:03:39,687 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:03:40,740 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:03:44,731 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:03:45,791 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:03:49,325 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 20:03:49,672 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:03:51,687 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:03:54,830 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:03:56,731 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:03:59,875 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:04:01,794 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:04:04,665 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:04:07,694 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:04:09,976 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:04:12,751 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:04:15,049 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:04:17,810 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:04:19,337 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 20:04:19,669 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:04:23,723 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:04:25,152 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:04:28,757 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:04:30,199 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:04:33,812 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:04:34,685 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:04:39,754 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:04:40,324 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:04:44,801 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:04:45,355 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:04:49,352 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 20:04:49,701 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:04:50,717 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:04:55,432 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:04:55,750 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:05:00,463 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:05:00,795 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:05:01,323 DEBUG   SenderThread:27588 [sender.py:send():382] send: exit
+2024-02-22 20:05:01,323 INFO    SenderThread:27588 [sender.py:send_exit():589] handling exit code: 0
+2024-02-22 20:05:01,323 INFO    SenderThread:27588 [sender.py:send_exit():591] handling runtime: 1452
+2024-02-22 20:05:01,324 INFO    SenderThread:27588 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 20:05:01,325 INFO    SenderThread:27588 [sender.py:send_exit():597] send defer
+2024-02-22 20:05:01,325 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:05:01,325 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-22 20:05:01,325 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:05:01,326 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-22 20:05:01,326 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 1
+2024-02-22 20:05:01,326 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:05:01,326 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-22 20:05:01,326 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:05:01,326 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-22 20:05:01,327 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 2
+2024-02-22 20:05:01,327 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:05:01,327 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-22 20:05:01,327 INFO    HandlerThread:27588 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-22 20:05:01,327 DEBUG   SystemMonitor:27588 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-22 20:05:01,328 INFO    HandlerThread:27588 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-22 20:05:01,328 DEBUG   SystemMonitor:27588 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-22 20:05:01,328 INFO    HandlerThread:27588 [interfaces.py:finish():202] Joined disk monitor
+2024-02-22 20:05:01,329 INFO    HandlerThread:27588 [interfaces.py:finish():202] Joined memory monitor
+2024-02-22 20:05:01,329 INFO    HandlerThread:27588 [interfaces.py:finish():202] Joined network monitor
+2024-02-22 20:05:01,329 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:05:01,329 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-22 20:05:01,329 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 3
+2024-02-22 20:05:01,329 DEBUG   SenderThread:27588 [sender.py:send():382] send: stats
+2024-02-22 20:05:01,330 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:05:01,330 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-22 20:05:01,330 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:05:01,330 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-22 20:05:01,330 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 4
+2024-02-22 20:05:01,331 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:05:01,331 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-22 20:05:01,331 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:05:01,331 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-22 20:05:01,331 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 5
+2024-02-22 20:05:01,331 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:05:01,331 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-22 20:05:01,332 DEBUG   SenderThread:27588 [sender.py:send():382] send: summary
+2024-02-22 20:05:01,333 INFO    SenderThread:27588 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 20:05:01,333 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:05:01,333 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-22 20:05:01,333 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 6
+2024-02-22 20:05:01,334 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:05:01,334 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-22 20:05:01,334 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:05:01,334 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-22 20:05:01,334 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 7
+2024-02-22 20:05:01,335 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:05:01,335 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:05:01,335 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-22 20:05:01,336 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:05:01,336 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-22 20:05:02,277 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 20:05:02,277 INFO    Thread-16 :27588 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\wandb-summary.json
+2024-02-22 20:05:02,337 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:02,959 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 8
+2024-02-22 20:05:02,960 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:02,960 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:05:02,961 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-22 20:05:02,961 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:05:02,961 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-22 20:05:02,961 INFO    SenderThread:27588 [job_builder.py:build():296] Attempting to build job artifact
+2024-02-22 20:05:02,979 INFO    SenderThread:27588 [job_builder.py:_get_source_type():437] no source found
+2024-02-22 20:05:02,979 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 9
+2024-02-22 20:05:02,980 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:05:02,980 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-22 20:05:02,980 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:05:02,980 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-22 20:05:02,980 INFO    SenderThread:27588 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-22 20:05:03,284 INFO    SenderThread:27588 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 20:05:03,285 INFO    SenderThread:27588 [dir_watcher.py:finish():388] scan: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files
+2024-02-22 20:05:03,286 INFO    SenderThread:27588 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\config.yaml config.yaml
+2024-02-22 20:05:03,286 INFO    SenderThread:27588 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log output.log
+2024-02-22 20:05:03,287 INFO    SenderThread:27588 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\requirements.txt requirements.txt
+2024-02-22 20:05:03,296 INFO    SenderThread:27588 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\wandb-metadata.json wandb-metadata.json
+2024-02-22 20:05:03,297 INFO    SenderThread:27588 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\wandb-summary.json wandb-summary.json
+2024-02-22 20:05:03,305 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 10
+2024-02-22 20:05:03,306 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:05:03,306 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-22 20:05:03,311 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:05:03,311 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-22 20:05:03,312 INFO    SenderThread:27588 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-22 20:05:03,348 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:03,349 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:04,357 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:04,358 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:04,407 INFO    wandb-upload_1:27588 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Nayan_Patel\AppData\Local\Programs\Python\Python38\lib\socket.py", line 914, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connectionpool.py", line 1096, in _validate_conn
+    conn.connect()
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001C58218E8B0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C58218E8B0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C58218E8B0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+2024-02-22 20:05:05,372 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:05,373 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:06,382 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:05:06,383 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:06,384 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:07,400 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:07,401 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:08,412 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:08,413 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:09,424 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:09,425 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:10,438 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:10,439 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:11,449 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:05:11,451 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:11,451 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:12,461 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:12,461 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:13,473 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:13,473 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:14,484 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:14,485 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:15,499 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:15,499 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:16,513 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:05:16,513 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:16,514 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:17,523 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:17,524 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:05:18,537 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:05:18,538 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:08,767 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:06:08,768 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:06:08,768 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:08,769 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:08,775 WARNING FileStreamThread:27588 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /files/nayanpatel0507/asteroid/679mt3ku/file_stream (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C582267340>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)")). func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x000001C581E6B790>>, timeout=180), args: ('https://api.wandb.ai/files/nayanpatel0507/asteroid/679mt3ku/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 17, 'content': ['{"system.disk.\\\\.usagePercent": 87.7, "system.disk.\\\\.usageGB": 208.31, "system.disk.in": 600.41, "system.disk.out": 1001.87, "system.cpu": 26.33, "system.cpu.0.cpu_percent": 39.93, "system.cpu.1.cpu_percent": 25.37, "system.cpu.2.cpu_percent": 30.18, "system.cpu.3.cpu_percent": 38.89, "system.cpu.4.cpu_percent": 27.33, "system.cpu.5.cpu_percent": 35.57, "system.cpu.6.cpu_percent": 34.49, "system.cpu.7.cpu_percent": 43.11, "system.proc.cpu.threads": 22, "system.network.sent": -355221300.4, "system.network.recv": -4275949458.47, "system.proc.memory.availableMB": 2792.28, "system.memory": 82.62, "system.proc.memory.rssMB": 972.46, "system.proc.memory.percent": 6.05, "_wandb": true, "_timestamp": 1708649419.112675, "_runtime": 570.550144}']}}, 'dropped': 0}}
+2024-02-22 20:06:15,831 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:06:15,831 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:15,831 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:06:15,832 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:16,838 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:16,839 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:17,850 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:17,851 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:18,865 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:18,865 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:19,879 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:19,879 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:20,887 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:06:20,888 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:20,889 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:21,904 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:21,905 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:22,917 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:22,918 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:23,925 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:23,925 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:24,938 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:24,939 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:25,946 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:06:25,946 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:25,947 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:26,957 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:26,958 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:27,966 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:27,967 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:28,973 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:28,974 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:29,984 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:29,986 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:30,992 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:30,992 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:06:30,993 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:32,000 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:32,001 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:33,009 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:33,010 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:34,019 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:34,020 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:35,028 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:35,028 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:36,039 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:06:36,040 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:36,040 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:37,050 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:37,051 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:38,055 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:38,055 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:39,061 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:39,061 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:40,070 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:40,071 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:41,079 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:06:41,080 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:41,080 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:42,091 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:42,092 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:43,103 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:43,105 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:44,111 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:44,112 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:45,117 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:45,118 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:46,127 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:06:46,127 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:46,128 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:47,137 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:47,138 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:48,147 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:48,147 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:49,157 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:49,157 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:50,169 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:50,169 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:51,179 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:06:51,179 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:51,180 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:52,190 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:52,192 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:53,202 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:53,203 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:54,209 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:54,211 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:55,220 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:55,221 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:56,233 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:56,233 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:06:56,234 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:57,242 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:57,243 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:58,254 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:58,254 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:06:59,260 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:06:59,260 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:07:00,272 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:07:00,272 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:07:56,111 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:07:56,112 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:07:56,115 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:07:56,116 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:09:16,404 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:09:16,405 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:09:16,406 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:16,407 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:17,418 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:17,419 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:18,425 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:18,426 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:19,433 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:19,434 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:20,439 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:20,439 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:22,047 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:09:22,047 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:22,048 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:23,047 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:23,049 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:24,216 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:24,219 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:25,221 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:25,222 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:26,398 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:26,398 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:27,414 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:09:27,414 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:27,414 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:28,419 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:28,419 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:29,427 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:29,427 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:30,751 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:30,752 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:31,765 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:31,766 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:35,927 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:35,929 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:35,929 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:09:36,929 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:36,930 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:38,129 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:38,129 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:38,864 INFO    wandb-upload_1:27588 [upload_job.py:push():131] Uploaded file C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\output.log
+2024-02-22 20:09:39,137 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:39,137 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:40,305 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:40,306 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:41,315 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:09:41,317 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:41,317 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:42,328 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:42,329 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:43,346 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:43,346 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:44,356 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:44,357 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:45,371 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:45,372 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:46,384 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:09:46,385 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:46,386 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:47,399 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:47,399 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:48,406 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:48,407 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:49,414 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:49,415 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:50,431 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:50,431 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:51,441 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:09:51,442 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:51,443 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:09:52,451 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:09:52,452 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:10:19,160 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:10:19,160 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:10:19,160 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:10:19,161 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:10:20,168 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:10:20,169 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:10:21,178 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:10:21,179 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:10:22,190 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:10:22,191 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:10:23,951 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:10:23,951 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:10:24,954 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:10:24,954 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:10:24,955 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:10:25,965 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:10:25,966 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:10:26,976 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:10:26,977 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:10:27,987 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:10:27,987 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:10:29,000 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:10:29,001 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:10:30,014 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:10:30,015 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:10:30,016 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:16,493 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:12:16,494 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:12:16,494 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:16,494 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:17,820 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:17,821 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:18,828 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:18,828 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:20,182 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:20,183 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:20,426 INFO    wandb-upload_0:27588 [upload_job.py:push():131] Uploaded file C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\config.yaml
+2024-02-22 20:12:21,195 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:21,195 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:21,607 INFO    wandb-upload_3:27588 [upload_job.py:push():131] Uploaded file C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\wandb-summary.json
+2024-02-22 20:12:22,202 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:12:22,202 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:22,203 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:23,219 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:23,220 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:24,231 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:24,231 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:25,243 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:25,243 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:26,257 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:26,258 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:27,270 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:12:27,270 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:27,271 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:28,283 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:28,283 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:29,295 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:29,296 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:30,303 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:30,304 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:31,319 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:31,319 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:32,328 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:12:32,329 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:32,331 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:33,343 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:33,344 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:34,357 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:34,358 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:35,372 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:35,373 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:36,381 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:36,382 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:37,387 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:37,389 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:12:37,389 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:38,402 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:38,403 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:39,415 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:39,416 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:40,427 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:40,427 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:41,442 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:41,442 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:42,447 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:42,447 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:12:42,447 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:43,456 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:43,456 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:44,468 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:44,468 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:45,484 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:45,484 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:46,498 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:46,500 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:47,510 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:12:47,512 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:47,512 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:48,526 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:48,527 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:49,538 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:49,539 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:50,546 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:50,549 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:51,561 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:51,562 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:52,574 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:52,575 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:12:52,576 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:53,589 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:53,589 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:54,603 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:54,603 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:55,619 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:55,620 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:12:56,631 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:12:56,632 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:16,273 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:15:16,274 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:15:16,274 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:16,274 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:17,285 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:17,285 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:18,297 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:18,297 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:19,301 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:19,302 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:20,316 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:20,316 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:21,331 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:21,331 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:15:21,331 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:22,332 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:22,332 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:23,340 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:23,340 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:24,346 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:24,347 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:25,349 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:25,350 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:26,351 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:15:26,352 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:26,352 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:27,355 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:27,356 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:28,363 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:28,364 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:29,375 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:29,375 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:30,391 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:30,392 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:31,425 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:31,425 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:15:31,426 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:32,438 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:32,438 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:33,453 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:33,454 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:34,468 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:34,468 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:35,472 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:35,473 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:36,487 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:15:36,487 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:36,487 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:37,490 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:37,491 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:38,496 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:38,496 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:39,499 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:39,500 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:40,512 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:40,512 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:41,526 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:41,527 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:15:41,527 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:42,542 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:42,542 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:43,555 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:43,555 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:44,560 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:44,561 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:45,575 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:45,576 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:46,587 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:15:46,588 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:46,589 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:47,590 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:47,590 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:48,603 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:48,604 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:49,617 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:49,617 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:50,616 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:50,616 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:51,630 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:15:51,630 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:51,631 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:52,640 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:52,640 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:53,652 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:53,653 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:54,666 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:54,667 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:55,678 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:55,680 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:56,690 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:15:56,691 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:56,692 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:57,704 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:57,705 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:58,720 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:58,720 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:15:59,732 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:15:59,733 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:00,746 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:00,747 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:01,758 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:16:01,759 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:01,759 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:02,772 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:02,773 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:03,786 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:03,788 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:04,801 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:04,801 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:05,815 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:05,817 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:06,828 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:16:06,829 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:06,830 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:07,845 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:07,845 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:08,857 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:08,858 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:09,860 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:09,860 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:10,865 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:10,866 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:11,872 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:11,873 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:16:11,873 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:12,884 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:12,885 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:13,892 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:13,893 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:14,893 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:14,894 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:15,894 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:15,895 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:16,896 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:16,897 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:16,897 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:16:17,899 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:17,900 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:18,916 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:18,917 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:19,919 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:19,920 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:20,927 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:20,928 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:21,937 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:21,937 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:16:21,938 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:22,952 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:22,953 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:23,969 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:23,970 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:24,972 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:24,973 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:25,986 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:25,988 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:26,996 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:16:26,998 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:26,998 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:28,000 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:28,001 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:29,017 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:29,018 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:30,028 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:30,028 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:31,032 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:31,032 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:32,036 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:16:32,036 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:32,037 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:33,037 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:33,038 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:34,050 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:34,050 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:35,062 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:35,063 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:36,079 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:36,079 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:37,085 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:16:37,085 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:37,086 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:38,096 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:38,097 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:39,106 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:39,107 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:40,108 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:40,109 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:41,123 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:41,124 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:42,139 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:16:42,140 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:42,140 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:43,154 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:43,155 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:44,167 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:44,168 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:45,182 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:45,183 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:46,185 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:46,185 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:47,194 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:16:47,195 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:47,196 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:48,201 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:48,202 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:16:48,677 INFO    wandb-upload_2:27588 [upload_job.py:push():131] Uploaded file C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\files\requirements.txt
+2024-02-22 20:16:48,887 INFO    Thread-15 :27588 [sender.py:transition_state():617] send defer: 11
+2024-02-22 20:16:48,888 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:16:48,888 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-22 20:16:48,889 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:16:48,889 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-22 20:16:48,889 INFO    SenderThread:27588 [file_pusher.py:join():181] waiting for file pusher
+2024-02-22 20:16:48,889 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 12
+2024-02-22 20:16:48,889 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:16:48,889 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-22 20:16:48,889 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:16:48,889 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-22 20:16:48,889 INFO    SenderThread:27588 [file_stream.py:finish():595] file stream finish called
+2024-02-22 20:16:49,214 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:16:54,274 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:16:59,331 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:17:04,376 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:17:09,406 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:17:14,471 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:17:19,527 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-22 20:17:21,877 INFO    SenderThread:27588 [file_stream.py:finish():599] file stream finish is done
+2024-02-22 20:17:21,877 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 13
+2024-02-22 20:17:21,877 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:17:21,878 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:17:21,878 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-22 20:17:21,878 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 20:17:21,878 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:17:21,878 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-22 20:17:21,878 INFO    SenderThread:27588 [sender.py:transition_state():617] send defer: 14
+2024-02-22 20:17:21,879 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 20:17:21,879 INFO    HandlerThread:27588 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-22 20:17:21,879 DEBUG   SenderThread:27588 [sender.py:send():382] send: final
+2024-02-22 20:17:21,879 DEBUG   SenderThread:27588 [sender.py:send():382] send: footer
+2024-02-22 20:17:21,879 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: defer
+2024-02-22 20:17:21,879 INFO    SenderThread:27588 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-22 20:17:21,880 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:17:21,881 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 20:17:21,881 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:17:21,881 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: server_info
+2024-02-22 20:17:21,882 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 20:17:21,882 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-22 20:17:21,883 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: server_info
+2024-02-22 20:17:21,883 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-22 20:17:21,886 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 20:17:21,888 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: job_info
+2024-02-22 20:17:21,920 DEBUG   SenderThread:27588 [sender.py:send_request():409] send_request: job_info
+2024-02-22 20:17:21,920 INFO    MainThread:27588 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-02-22 20:17:21,920 INFO    MainThread:27588 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-02-22 20:17:21,922 INFO    MainThread:27588 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-02-22 20:17:21,922 DEBUG   HandlerThread:27588 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-22 20:17:21,922 INFO    HandlerThread:27588 [handler.py:finish():869] shutting down handler
+2024-02-22 20:17:22,892 INFO    WriterThread:27588 [datastore.py:close():296] close: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240222_194048-679mt3ku\run-679mt3ku.wandb
+2024-02-22 20:17:22,923 INFO    SenderThread:27588 [sender.py:finish():1572] shutting down sender
+2024-02-22 20:17:22,923 INFO    SenderThread:27588 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-22 20:17:22,924 INFO    SenderThread:27588 [file_pusher.py:join():181] waiting for file pusher

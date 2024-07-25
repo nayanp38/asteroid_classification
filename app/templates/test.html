@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Switch</title>
+<style>
+    /* Hide the default checkbox */
+    .toggle-checkbox {
+        display: none;
+    }
+
+    /* Style the label to look like a toggle switch */
+    .toggle-label {
+        display: inline-block;
+        width: 100px; /* Adjust width to fit text */
+        height: 50px; /* Adjust height for better visibility */
+        background-color: #ccc;
+        border-radius: 25px; /* Half of height for rounded corners */
+        position: relative;
+        cursor: pointer;
+    }
+
+    /* Style the inner circle */
+    .toggle-label::after {
+        content: '';
+        position: absolute;
+        width: 46px; /* Adjust size of inner circle */
+        height: 46px; /* Adjust size of inner circle */
+        border-radius: 50%;
+        background-color: white;
+        top: 2px;
+        left: 2px;
+        transition: transform 0.3s ease;
+    }
+
+    /* Change background color when the checkbox is checked */
+    .toggle-checkbox:checked + .toggle-label {
+        background-color: #2196F3;
+    }
+
+    /* Move the inner circle to the right when checkbox is checked */
+    .toggle-checkbox:checked + .toggle-label::after {
+        transform: translateX(52px); /* Adjust based on inner circle size */
+    }
+
+    /* Style the text on both sides of the toggle switch */
+    .left-text, .right-text {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px;
+        color: #fff;
+        font-size: 14px; /* Adjust font size for better visibility */
+    }
+</style>
+</head>
+<body>
+
+<!-- Checkbox input -->
+<input type="checkbox" class="toggle-checkbox" id="toggle-switch">
+
+<!-- Label for the switch -->
+<label for="toggle-switch" class="toggle-label">
+    <!-- Text on the left side of the switch -->
+    <span class="left-text">Off</span>
+
+    <!-- Text on the right side of the switch -->
+    <span class="right-text">On</span>
+</label>
+
+</body>
+</html>

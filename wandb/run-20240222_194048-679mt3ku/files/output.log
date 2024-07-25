@@ -1,0 +1,18 @@
+
+number of asteroid types: 18
+Epoch [1/15], Train Loss: 0.5716, Val Loss: 0.1431
+Epoch [2/15], Train Loss: 0.0468, Val Loss: 0.0926
+wandb: Network error resolved after 0:00:15.918708, resuming normal operation.
+Epoch [3/15], Train Loss: 0.0132, Val Loss: 0.0683
+Epoch [4/15], Train Loss: 0.0186, Val Loss: 0.0427
+Epoch [5/15], Train Loss: 0.0293, Val Loss: 0.0475
+Epoch [6/15], Train Loss: 0.0837, Val Loss: 0.0244
+Epoch [7/15], Train Loss: 0.1165, Val Loss: 0.0135
+Epoch [8/15], Train Loss: 0.0000, Val Loss: 0.0157
+Epoch [9/15], Train Loss: 0.0000, Val Loss: 0.0741
+Epoch [10/15], Train Loss: 0.0196, Val Loss: 0.0590
+Epoch [11/15], Train Loss: 0.0000, Val Loss: 0.0055
+Epoch [12/15], Train Loss: 0.1056, Val Loss: 0.0109
+Epoch [13/15], Train Loss: 0.0001, Val Loss: 0.0053
+Epoch [14/15], Train Loss: 0.0000, Val Loss: 0.0058
+Epoch [15/15], Train Loss: 0.0009, Val Loss: 0.0284

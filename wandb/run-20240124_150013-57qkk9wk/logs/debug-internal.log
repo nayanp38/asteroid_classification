@@ -1,0 +1,480 @@
+2024-01-24 15:00:13,241 INFO    StreamThr :11016 [internal.py:wandb_internal():86] W&B internal server running at pid: 11016, started at: 2024-01-24 15:00:13.239985
+2024-01-24 15:00:13,243 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status
+2024-01-24 15:00:13,249 INFO    WriterThread:11016 [datastore.py:open_for_write():87] open: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\run-57qkk9wk.wandb
+2024-01-24 15:00:13,249 DEBUG   SenderThread:11016 [sender.py:send():382] send: header
+2024-01-24 15:00:13,250 DEBUG   SenderThread:11016 [sender.py:send():382] send: run
+2024-01-24 15:00:13,607 INFO    SenderThread:11016 [dir_watcher.py:__init__():211] watching files in: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files
+2024-01-24 15:00:13,607 INFO    SenderThread:11016 [sender.py:_start_run_threads():1136] run started: 57qkk9wk with start time 1706126413.24327
+2024-01-24 15:00:13,614 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: check_version
+2024-01-24 15:00:13,614 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: check_version
+2024-01-24 15:00:13,710 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: run_start
+2024-01-24 15:00:13,729 DEBUG   HandlerThread:11016 [system_info.py:__init__():27] System info init
+2024-01-24 15:00:13,729 DEBUG   HandlerThread:11016 [system_info.py:__init__():42] System info init done
+2024-01-24 15:00:13,729 INFO    HandlerThread:11016 [system_monitor.py:start():194] Starting system monitor
+2024-01-24 15:00:13,729 INFO    SystemMonitor:11016 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-24 15:00:13,730 INFO    HandlerThread:11016 [system_monitor.py:probe():214] Collecting system info
+2024-01-24 15:00:13,738 INFO    SystemMonitor:11016 [interfaces.py:start():190] Started cpu monitoring
+2024-01-24 15:00:13,746 DEBUG   HandlerThread:11016 [system_info.py:probe():151] Probing system
+2024-01-24 15:00:13,746 INFO    SystemMonitor:11016 [interfaces.py:start():190] Started disk monitoring
+2024-01-24 15:00:13,762 INFO    SystemMonitor:11016 [interfaces.py:start():190] Started memory monitoring
+2024-01-24 15:00:13,777 INFO    SystemMonitor:11016 [interfaces.py:start():190] Started network monitoring
+2024-01-24 15:00:13,778 DEBUG   HandlerThread:11016 [gitlib.py:_init_repo():56] git repository is invalid
+2024-01-24 15:00:13,778 DEBUG   HandlerThread:11016 [system_info.py:probe():199] Probing system done
+2024-01-24 15:00:13,778 DEBUG   HandlerThread:11016 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.8.0', 'heartbeatAt': '2024-01-24T20:00:13.746201', 'startedAt': '2024-01-24T20:00:13.229163', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\Nayan_Patel\\PycharmProjects\\asteroid\\full_train.py', 'codePathLocal': 'full_train.py', 'codePath': 'full_train.py', 'host': 'HS-CND1361QN5', 'username': 'Nayan_Patel', 'executable': 'C:\\Users\\Nayan_Patel\\PycharmProjects\\asteroid\\venv\\Scripts\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2419.0, 'min': 0.0, 'max': 2419.0}, 'cpu_freq_per_core': [{'current': 2419.0, 'min': 0.0, 'max': 2419.0}], 'disk': {'/': {'total': 237.46124649047852, 'used': 200.0616111755371}}, 'memory': {'total': 15.68770980834961}}
+2024-01-24 15:00:13,778 INFO    HandlerThread:11016 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-24 15:00:13,778 INFO    HandlerThread:11016 [system_monitor.py:probe():227] Publishing system info
+2024-01-24 15:00:13,780 INFO    HandlerThread:11016 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-24 15:00:13,786 DEBUG   SenderThread:11016 [sender.py:send():382] send: files
+2024-01-24 15:00:13,786 INFO    SenderThread:11016 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-01-24 15:00:13,794 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: python_packages
+2024-01-24 15:00:13,795 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: python_packages
+2024-01-24 15:00:13,795 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:00:13,797 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:00:13,797 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:00:13,912 DEBUG   SenderThread:11016 [sender.py:send():382] send: telemetry
+2024-01-24 15:00:14,200 INFO    wandb-upload_0:11016 [upload_job.py:push():131] Uploaded file C:\Users\NAYAN_~1\AppData\Local\Temp\tmpoppxdg1_wandb\ts2j22dd-wandb-metadata.json
+2024-01-24 15:00:14,610 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\requirements.txt
+2024-01-24 15:00:14,610 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\wandb-metadata.json
+2024-01-24 15:00:18,953 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:00:23,997 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:00:27,719 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:00:28,799 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:00:28,799 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:00:28,799 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:00:29,744 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:00:29,911 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:00:34,936 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:00:39,979 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:00:43,806 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:00:43,806 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:00:43,808 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:00:45,956 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:00:46,900 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\config.yaml
+2024-01-24 15:00:51,065 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:00:56,121 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:00:58,819 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:00:58,819 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:00:58,820 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:01:01,932 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:01:06,972 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:01:12,017 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:01:13,777 DEBUG   SystemMonitor:11016 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-24 15:01:13,778 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:01:13,825 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:01:13,841 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:01:13,843 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:01:17,934 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:01:22,971 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:01:27,996 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:01:28,840 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:01:28,857 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:01:28,858 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:01:32,286 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:01:33,517 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:01:38,571 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:01:43,618 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:01:43,794 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:01:43,855 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:01:43,856 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:01:43,856 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:01:49,012 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:01:54,077 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:01:58,855 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:01:58,856 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:01:58,871 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:01:59,992 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:02:02,612 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:02:05,332 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:02:10,380 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:02:13,795 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:02:13,858 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:02:13,859 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:02:13,874 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:02:15,991 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:02:21,033 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:02:26,079 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:02:28,858 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:02:28,859 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:02:28,874 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:02:30,885 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:02:31,566 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:02:36,611 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:02:41,656 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:02:43,799 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:02:43,860 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:02:43,860 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:02:43,890 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:02:46,964 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:02:52,016 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:02:57,078 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:02:58,860 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:02:58,861 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:02:58,892 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:03:02,144 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:03:03,190 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:03:07,182 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:03:12,231 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:03:13,814 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:03:13,862 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:03:13,863 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:03:13,894 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:03:17,958 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:03:23,016 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:03:28,069 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:03:28,884 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:03:28,885 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:03:28,900 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:03:33,814 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:03:34,517 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:03:38,837 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:03:43,817 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:03:43,894 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:03:43,894 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:03:43,909 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:03:44,071 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:03:49,086 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:03:54,154 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:03:58,914 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:03:58,914 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:03:58,915 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:04:00,068 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:04:05,100 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:04:10,153 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:04:13,818 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:04:13,912 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:04:13,913 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:04:13,928 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:04:16,023 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:04:21,070 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:04:26,119 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:04:28,923 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:04:28,923 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:04:28,939 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:04:31,127 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:04:36,149 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:04:41,413 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:04:42,093 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:04:43,830 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:04:43,924 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:04:43,925 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:04:43,939 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:04:47,278 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:04:52,316 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:04:57,353 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:04:58,941 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:04:58,942 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:04:58,943 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:05:03,113 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:05:08,195 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:05:13,222 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:05:13,840 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:05:13,950 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:05:13,950 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:05:13,951 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:05:19,172 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:05:24,211 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:05:28,960 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:05:28,961 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:05:28,961 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:05:30,081 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:05:35,128 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:05:40,162 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:05:43,849 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:05:43,969 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:05:43,985 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:05:43,986 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:05:46,072 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:05:51,114 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:05:56,956 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:05:57,160 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:05:58,979 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:05:59,010 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:05:59,010 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:06:02,109 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:06:07,157 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:06:12,201 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:06:13,854 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:06:13,995 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:06:14,026 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:06:14,027 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:06:18,174 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:06:23,220 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:06:28,254 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:06:28,999 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:06:29,032 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:06:29,033 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:06:34,182 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:06:39,219 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:06:43,858 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:06:44,015 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:06:44,030 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:06:44,031 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:06:45,148 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:06:50,190 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:06:55,230 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:06:59,026 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:06:59,027 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:06:59,029 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:07:01,204 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:07:04,235 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:07:06,793 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:07:11,833 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:07:13,867 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:07:14,040 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:07:14,040 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:07:14,041 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:07:17,256 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:07:22,290 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:07:27,328 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:07:29,047 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:07:29,048 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:07:29,061 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:07:33,338 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:07:38,384 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:07:43,422 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:07:43,879 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:07:44,052 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:07:44,052 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:07:44,066 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:07:49,262 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:07:54,311 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:07:59,075 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:07:59,076 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:07:59,078 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:08:00,171 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:08:05,213 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:08:10,237 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:08:13,884 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:08:14,090 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:08:14,091 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:08:14,092 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:08:15,249 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:08:20,330 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:08:24,616 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:08:25,601 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:08:29,102 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:08:29,103 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:08:29,104 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:08:31,336 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:08:36,371 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:08:41,421 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:08:43,897 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:08:44,102 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:08:44,103 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:08:44,118 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:08:46,499 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:08:51,538 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:08:56,577 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:08:59,117 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:08:59,117 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:08:59,133 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:09:02,265 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:09:06,128 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:09:07,927 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:09:12,993 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:09:13,909 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:09:14,130 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:09:14,131 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:09:14,146 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:09:18,328 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:09:23,380 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:09:28,438 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:09:29,154 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:09:29,154 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:09:29,155 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:09:32,435 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:09:33,651 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:09:38,695 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:09:43,749 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:09:43,923 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:09:44,162 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:09:44,162 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:09:44,163 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:09:49,466 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:09:54,512 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:09:59,172 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:09:59,172 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:09:59,180 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:09:59,883 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:10:02,747 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:10:04,927 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:10:09,982 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:10:13,930 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:10:14,168 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:10:14,168 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:10:14,185 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:10:15,974 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:10:21,023 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:10:26,063 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:10:29,185 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:10:29,186 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:10:29,200 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:10:31,305 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:10:35,047 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:10:36,482 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:10:41,536 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:10:43,943 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:10:44,193 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:10:44,194 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:10:44,209 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:10:47,322 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:10:52,387 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:10:57,444 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:10:59,215 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:10:59,215 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:10:59,216 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:11:03,408 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:11:08,455 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:11:12,462 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:11:13,944 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:11:13,945 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:11:14,226 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:11:14,227 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:11:14,227 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:11:19,429 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:11:24,495 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:11:29,237 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:11:29,238 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:11:29,238 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:11:30,330 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:11:35,370 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:11:40,433 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:11:43,963 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:11:44,257 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:11:44,257 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-24 15:11:44,258 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: stop_status
+2024-01-24 15:11:44,383 DEBUG   SenderThread:11016 [sender.py:send():382] send: exit
+2024-01-24 15:11:44,383 INFO    SenderThread:11016 [sender.py:send_exit():589] handling exit code: 0
+2024-01-24 15:11:44,383 INFO    SenderThread:11016 [sender.py:send_exit():591] handling runtime: 690
+2024-01-24 15:11:44,384 INFO    SenderThread:11016 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-24 15:11:44,385 INFO    SenderThread:11016 [sender.py:send_exit():597] send defer
+2024-01-24 15:11:44,385 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:44,385 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-24 15:11:44,385 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:44,385 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-01-24 15:11:44,385 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 1
+2024-01-24 15:11:44,386 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:44,386 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-24 15:11:44,386 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:44,386 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-01-24 15:11:44,386 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 2
+2024-01-24 15:11:44,386 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:44,386 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-24 15:11:44,386 INFO    HandlerThread:11016 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-24 15:11:44,387 INFO    HandlerThread:11016 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-24 15:11:44,387 DEBUG   SystemMonitor:11016 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-24 15:11:44,387 INFO    HandlerThread:11016 [interfaces.py:finish():202] Joined disk monitor
+2024-01-24 15:11:44,387 DEBUG   SystemMonitor:11016 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-24 15:11:44,387 INFO    HandlerThread:11016 [interfaces.py:finish():202] Joined memory monitor
+2024-01-24 15:11:44,388 INFO    HandlerThread:11016 [interfaces.py:finish():202] Joined network monitor
+2024-01-24 15:11:44,388 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:44,388 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-01-24 15:11:44,388 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 3
+2024-01-24 15:11:44,389 DEBUG   SenderThread:11016 [sender.py:send():382] send: stats
+2024-01-24 15:11:44,389 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:44,389 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-24 15:11:44,389 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:44,389 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-01-24 15:11:44,389 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 4
+2024-01-24 15:11:44,389 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:44,390 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-24 15:11:44,390 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:44,390 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-01-24 15:11:44,390 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 5
+2024-01-24 15:11:44,390 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:44,390 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-24 15:11:44,390 DEBUG   SenderThread:11016 [sender.py:send():382] send: summary
+2024-01-24 15:11:44,391 INFO    SenderThread:11016 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-24 15:11:44,392 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:44,392 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-01-24 15:11:44,392 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 6
+2024-01-24 15:11:44,392 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:44,392 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-24 15:11:44,392 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:44,392 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-01-24 15:11:44,392 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 7
+2024-01-24 15:11:44,392 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: status_report
+2024-01-24 15:11:44,393 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:44,393 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-24 15:11:44,393 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:44,393 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-01-24 15:11:44,861 INFO    Thread-16 :11016 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\wandb-summary.json
+2024-01-24 15:11:45,263 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-24 15:11:46,588 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 8
+2024-01-24 15:11:46,588 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: poll_exit
+2024-01-24 15:11:46,588 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:46,589 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-24 15:11:46,589 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:46,589 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-01-24 15:11:46,590 INFO    SenderThread:11016 [job_builder.py:build():296] Attempting to build job artifact
+2024-01-24 15:11:46,601 INFO    SenderThread:11016 [job_builder.py:_get_source_type():437] no source found
+2024-01-24 15:11:46,602 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 9
+2024-01-24 15:11:46,602 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:46,602 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-24 15:11:46,602 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:46,602 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-01-24 15:11:46,603 INFO    SenderThread:11016 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-24 15:11:46,883 INFO    SenderThread:11016 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:11:46,885 INFO    SenderThread:11016 [dir_watcher.py:finish():388] scan: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files
+2024-01-24 15:11:46,886 INFO    SenderThread:11016 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\config.yaml config.yaml
+2024-01-24 15:11:46,886 INFO    SenderThread:11016 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log output.log
+2024-01-24 15:11:46,890 INFO    SenderThread:11016 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\requirements.txt requirements.txt
+2024-01-24 15:11:46,892 INFO    SenderThread:11016 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\wandb-metadata.json wandb-metadata.json
+2024-01-24 15:11:46,892 INFO    SenderThread:11016 [dir_watcher.py:finish():402] scan save: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\wandb-summary.json wandb-summary.json
+2024-01-24 15:11:46,900 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 10
+2024-01-24 15:11:46,901 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:46,901 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 10
+2024-01-24 15:11:46,901 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:46,901 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-01-24 15:11:46,902 INFO    SenderThread:11016 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-24 15:11:47,191 INFO    wandb-upload_0:11016 [upload_job.py:push():131] Uploaded file C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\config.yaml
+2024-01-24 15:11:47,193 INFO    wandb-upload_1:11016 [upload_job.py:push():131] Uploaded file C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\output.log
+2024-01-24 15:11:47,207 INFO    wandb-upload_2:11016 [upload_job.py:push():131] Uploaded file C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\requirements.txt
+2024-01-24 15:11:47,209 INFO    wandb-upload_3:11016 [upload_job.py:push():131] Uploaded file C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\files\wandb-summary.json
+2024-01-24 15:11:47,284 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-24 15:11:47,285 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: poll_exit
+2024-01-24 15:11:47,424 INFO    Thread-15 :11016 [sender.py:transition_state():617] send defer: 11
+2024-01-24 15:11:47,426 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:47,426 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 11
+2024-01-24 15:11:47,427 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:47,427 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-01-24 15:11:47,427 INFO    SenderThread:11016 [file_pusher.py:join():181] waiting for file pusher
+2024-01-24 15:11:47,427 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 12
+2024-01-24 15:11:47,428 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:47,428 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 12
+2024-01-24 15:11:47,429 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:47,429 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-01-24 15:11:47,429 INFO    SenderThread:11016 [file_stream.py:finish():595] file stream finish called
+2024-01-24 15:11:47,631 INFO    SenderThread:11016 [file_stream.py:finish():599] file stream finish is done
+2024-01-24 15:11:47,631 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 13
+2024-01-24 15:11:47,631 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:47,631 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 13
+2024-01-24 15:11:47,632 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:47,632 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-01-24 15:11:47,632 INFO    SenderThread:11016 [sender.py:transition_state():617] send defer: 14
+2024-01-24 15:11:47,633 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: defer
+2024-01-24 15:11:47,633 INFO    HandlerThread:11016 [handler.py:handle_request_defer():172] handle defer: 14
+2024-01-24 15:11:47,634 DEBUG   SenderThread:11016 [sender.py:send():382] send: final
+2024-01-24 15:11:47,634 DEBUG   SenderThread:11016 [sender.py:send():382] send: footer
+2024-01-24 15:11:47,634 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: defer
+2024-01-24 15:11:47,634 INFO    SenderThread:11016 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-01-24 15:11:47,636 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-24 15:11:47,636 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-24 15:11:47,636 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: server_info
+2024-01-24 15:11:47,636 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: get_summary
+2024-01-24 15:11:47,636 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: sampled_history
+2024-01-24 15:11:47,636 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-24 15:11:47,637 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: job_info
+2024-01-24 15:11:47,638 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: poll_exit
+2024-01-24 15:11:47,638 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: poll_exit
+2024-01-24 15:11:47,638 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: server_info
+2024-01-24 15:11:47,695 DEBUG   SenderThread:11016 [sender.py:send_request():409] send_request: job_info
+2024-01-24 15:11:47,696 INFO    MainThread:11016 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-01-24 15:11:47,696 INFO    MainThread:11016 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-01-24 15:11:47,696 INFO    MainThread:11016 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-01-24 15:11:47,697 DEBUG   HandlerThread:11016 [handler.py:handle_request():146] handle_request: shutdown
+2024-01-24 15:11:47,697 INFO    HandlerThread:11016 [handler.py:finish():869] shutting down handler
+2024-01-24 15:11:48,653 INFO    WriterThread:11016 [datastore.py:close():296] close: C:\Users\Nayan_Patel\PycharmProjects\asteroid\wandb\run-20240124_150013-57qkk9wk\run-57qkk9wk.wandb
+2024-01-24 15:11:48,701 INFO    SenderThread:11016 [sender.py:finish():1572] shutting down sender
+2024-01-24 15:11:48,701 INFO    SenderThread:11016 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-24 15:11:48,701 INFO    SenderThread:11016 [file_pusher.py:join():181] waiting for file pusher

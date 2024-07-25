@@ -1,0 +1,39 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.8.0",
+    "heartbeatAt": "2024-03-07T02:01:11.915327",
+    "startedAt": "2024-03-07T02:01:11.397839",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\Nayan_Patel\\PycharmProjects\\asteroid\\full_train.py",
+    "codePathLocal": "full_train.py",
+    "codePath": "full_train.py",
+    "host": "HS-CND1361QN5",
+    "username": "Nayan_Patel",
+    "executable": "C:\\Users\\Nayan_Patel\\PycharmProjects\\asteroid\\venv\\Scripts\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2419.0,
+        "min": 0.0,
+        "max": 2419.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2419.0,
+            "min": 0.0,
+            "max": 2419.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 237.46124649047852,
+            "used": 210.7324447631836
+        }
+    },
+    "memory": {
+        "total": 15.68770980834961
+    }
+}

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asteroid Classification Tool</title>
+<style>
+    body {
+        font-family: Candara, sans-serif;
+        background-color: #0d0d0d;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden; /* Allow page to scroll */
+    }
+    .star {
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 50%;
+        width: 2px;
+        height: 2px;
+    }
+    .shooting-star {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+    .container {
+        text-align: center;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: 1; /* Ensure the container is on top of the stars */
+        overflow: hidden; /* Hide container overflow */
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    input[type="number"] {
+        padding: 10px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        width: 200px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 5px;
+        margin-top: 8px;
+        background-color: #007bff;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    #diameter, #abs_mag, #albedo {
+        margin-top: 5px;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    #result {
+        margin-top: 5px;
+        display: none;
+        z-index: 1; /* Ensure the result is on top of the stars */
+    }
+    #aux {
+        margin-top: 5px;
+        display: none;
+        z-index: 1; /* Ensure the result is on top of the stars */
+    }
+    #logo {
+        margin-bottom: 50px;
+        width: 50%; /* Adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .classification {
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 5px;
+        animation: pulse 1s;
+    }
+    #inputNumber {
+        height: 40px;
+        margin-right: 10px;
+    }
+    #inputCol {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+    .aux_data {
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 5px;
+        animation: pulse 1s;
+    }
+    #spectrum {
+        background-color: #007bff;
+        width: 500px;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 5px;
+        animation: pulse 1s;
+    }
+    @keyframes pulse {
+        0% {
+        transform: translateY(-10px) scale(1);
+        opacity: 0;
+        }
+        100% {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+    }
+    #response {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #nums {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 5px;
+        animation: pulse 1s;
+    }
+    #identity {
+        margin-top: 5px;
+        display: none;
+        z-index: 1; /* Ensure the result is on top of the stars */
+    }
+    #link {
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 5px;
+        z-index: 2;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #0060c7;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: #0060c7;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #0060c7;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+    #slider_bar {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: #007bff;
+        color: #ffffff;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .labels {
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 5px 5px 0;
+        border-radius: 5px;
+        margin: 5px;
+    }
+</style>
+</head>
+<body>
+<!-- Shooting Stars -->
+<script>
+    var numStars = 100; // Adjust as needed
+    for (var i = 0; i < numStars; i++) {
+        var star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = Math.random() * window.innerWidth + 'px'; // Random horizontal position within window width
+        star.style.top = Math.random() * (window.innerHeight + 200) + 'px'; // Random vertical position within window height
+        document.body.appendChild(star);
+    }
+
+    // Generate initial shooting stars
+
+    var numShootingStars = 10; // Adjust as needed
+        for (var i = 0; i < numShootingStars; i++) {
+            createShootingStar();
+        }
+    function generateShootingStars() {
+        var numShootingStars = 10; // Adjust as needed
+        for (var i = 0; i < numShootingStars; i++) {
+            createShootingStar();
+        }
+    }
+
+    function createShootingStar() {
+        var star = document.createElement('div');
+        star.className = 'shooting-star';
+        var startX, startY;
+        // Randomly select starting position
+        if (Math.random() < 0.5) {
+            startX = Math.random() * window.innerWidth;
+            startY = 0;
+        } else {
+            startX = Math.random() * window.innerWidth;
+            startY = window.innerHeight + 200;
+        }
+        star.style.left = startX + 'px';
+        star.style.top = startY + 'px';
+        star.style.opacity = '0'; // Set initial opacity to 0
+        document.body.appendChild(star);
+
+        // Set random animation duration and delay
+        var animationDuration = Math.random() * 4 + 3; // Duration between 1 and 5 seconds
+        var animationDelay = Math.random()* 10; // Delay between 0 and 10 seconds
+
+        // Fade in, move across the screen, and fade out
+        var endX = Math.random() * window.innerWidth;
+        var endY = Math.random() * window.innerHeight + 200;
+        star.animate([
+            { opacity: 0, transform: 'translate(0, 0)' },
+            { opacity: 1, transform: 'translate(' + (endX - startX) + 'px, ' + (endY - startY) + 'px)' },
+            { opacity: 0, transform: 'translate(' + (2*(endX - startX)) + 'px, ' + (2*(endY - startY)) + 'px)' }
+        ], {
+            duration: animationDuration * 1000,
+            delay: animationDelay * 1000,
+            easing: 'linear',
+            fill: 'forwards'
+        }).onfinish = function() {
+            star.remove(); // Remove the shooting star from the DOM after animation is complete
+        };
+    }
+
+    setInterval(generateShootingStars, 5000); // Adjust interval as needed
+
+</script>
+
+
+<div class="container">
+    <img src="{{url_for('static', filename='logo_6b.png')}}" alt="logo" id="logo"/>
+    <div id='slider_bar'>
+        <div id="asteroid id" class="labels">Classify with Asteroid ID</div>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+        <div id="custom" class="labels">Classify with Spectrum</div>
+    </div>
+
+    <div id="inputCol">
+            <label for="input"></label><input id="input" placeholder="Asteroid Spectrum">
+            <label for="diameter"></label><input id="diameter" placeholder="Asteroid Diameter">
+            <label for="abs_mag"></label><input id="abs_mag" placeholder="Asteroid Absolute Magnitude">
+            <label for="albedo"></label><input id="albedo" placeholder="Asteroid Albedo">
+            <button onclick="classifyAsteroid()">Classify</button>
+    </div>
+
+    <div class="flex_row">
+        <div id="response">
+            <div id="nums">
+                <div id="identity">
+                    <p class="name" id="name"></p>
+                </div>
+                <div id="result">
+                    <p class="classification" id="classification"></p>
+                </div>
+                <div id="material container">
+                    <p class="mats" id="mats"></p>
+                </div>
+                <div id="aux">
+                    <p class="aux_data" id="aux_data"></p>
+                </div>
+            </div>
+            <div id="img">
+                <img class="spectrum" id="spectrum" src=""/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+document.getElementById("result").style.display = "none";
+document.getElementById("aux").style.display = "none";
+document.getElementById("img").style.display = "none";
+document.getElementById("identity").style.display = "none";
+
+function custom () {
+    document.getElementById()
+}
+function classifyAsteroid() {
+    var spec = document.getElementById("input").value;
+    var diameter = document.getElementById("diameter").value; // Get other variable values from HTML elements
+    var abs_mag = document.getElementById("abs_mag").value;
+    var albedo = document.getElementById("albedo").value;
+
+
+    fetch('/spectrum?spectrum=' + spec + '&diameter=' + diameter + '&abs_mag=' + abs_mag + '&albedo=' + albedo) // Append other variables to the URL
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("result").style.display = "none";
+            document.getElementById("aux").style.display = "none";
+            document.getElementById("img").style.display = "none";
+            document.getElementById("identity").style.display = "none";
+
+
+            document.getElementById("classification").innerText = data.classification;
+            document.getElementById("result").style.display = "block";
+
+            if (data.aux_data) {
+                document.getElementById('aux_data').innerText = data.aux_data;
+                document.getElementById("aux").style.display = "none";
+            }
+
+            if (data.identity) {
+                document.getElementById('name').innerText = data.identity;
+                document.getElementById("identity").style.display = "none";
+            }
+
+            var spectrumImg = document.getElementById('none');
+
+            if (data.classification != 'One or more fields are blank!') {
+                spectrumImg.src = "{{url_for('static', filename='display_img.png')}}" + '?time=' + new Date().getTime();
+                document.getElementById("img").style.display = "block";
+            }
+
+        })
+        .catch(error => console.error('Error:', error));
+}
+
+// Accessing the switch and adding an event listener for change
+const toggleSwitch = document.querySelector('.switch');
+
+// Function to set the initial state of the switch based on URL
+function setInitialState() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const switchState = urlParams.get('switch');
+    if (switchState === 'on') {
+        toggleSwitch.checked = true;
+    } else {
+        toggleSwitch.checked = false;
+    }
+}
+
+// Call the function to set the initial state
+setInitialState();
+
+toggleSwitch.addEventListener('change', function() {
+    // Check if the switch is checked
+    if (this.checked) {
+        // Redirect to page when switch is toggled on
+        window.location.href = 'upload.html?switch=on'; // Replace 'page1.html' with your desired page
+    } else {
+        // Redirect to page when switch is toggled off
+        window.location.href = '{{ url_for("index") }}';; // Replace 'page2.html' with your desired page
+    }
+});
+</script>
+</body>
+</html>

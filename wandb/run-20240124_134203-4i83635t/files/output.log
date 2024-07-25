@@ -1,0 +1,14 @@
+
+number of asteroid types: 18
+Traceback (most recent call last):
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\full_train.py", line 84, in <module>
+    val_loss += criterion(val_outputs, val_labels).item()
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\loss.py", line 1179, in forward
+    return F.cross_entropy(input, target, weight=self.weight,
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\functional.py", line 3053, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+RuntimeError: expected scalar type Long but found Double

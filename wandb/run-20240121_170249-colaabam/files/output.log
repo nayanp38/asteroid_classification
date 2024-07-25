@@ -1,0 +1,34 @@
+ERROR    [rocks] Could not identify 'graphs\A\1747.png'.
+ERROR    [rocks] Could not identify 'graphs\A\1747_augmented_182.png'.
+ERROR    [rocks] Could not identify 'graphs\A\1747_augmented_195.png'.
+ERROR    [rocks] Could not identify 'graphs\A\1747_augmented_57.png'.
+ERROR    [rocks] Could not identify 'graphs\A\1747_augmented_59.png'.
+ERROR    [rocks] Could not identify 'graphs\A\1747_augmented_65.png'.
+ERROR    [rocks] Could not identify 'graphs\A\1747_augmented_98.png'.
+ERROR    [rocks] Could not identify 'graphs\A\1951.png'.
+ERROR    [rocks] Could not identify 'graphs\A\1951_augmented_104.png'.
+ERROR    [rocks] Could not identify 'graphs\A\1951_augmented_162.png'.
+Traceback (most recent call last):
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\full_train.py", line 34, in <module>
+    graph_dataset = FullDataset(root_dir=graph_directory, transform=transform)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\graph_dataset.py", line 84, in __init__
+    class_diameters = self.get_diameters(image_paths)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\graph_dataset.py", line 113, in get_diameters
+    diameters = [get_diameter(img_path) for img_path in image_paths]
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\graph_dataset.py", line 113, in <listcomp>
+    diameters = [get_diameter(img_path) for img_path in image_paths]
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\graph_generator.py", line 124, in get_diameter
+    diameter = rocks.Rock(number).diameter.value
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\rocks\core.py", line 919, in __init__
+    _, _, id_ = resolve.identify(id_, return_id=True)  # type: ignore
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\rocks\resolve.py", line 123, in identify
+    results = loop.run_until_complete(_identify(id_, local, progress_bar, task))
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\nest_asyncio.py", line 93, in run_until_complete
+    self._run_once()
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\nest_asyncio.py", line 116, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\Nayan_Patel\AppData\Local\Programs\Python\Python38\lib\asyncio\windows_events.py", line 430, in select
+    self._poll(timeout)
+  File "C:\Users\Nayan_Patel\AppData\Local\Programs\Python\Python38\lib\asyncio\windows_events.py", line 779, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt

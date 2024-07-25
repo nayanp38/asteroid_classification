@@ -1,0 +1,25 @@
+
+number of asteroid types: 18
+Epoch [1/10], Train Loss: 0.6336, Val Loss: 0.2612
+Epoch [2/10], Train Loss: 0.0715, Val Loss: 0.2342
+Epoch [3/10], Train Loss: 0.8139, Val Loss: 0.1566
+Traceback (most recent call last):
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\full_train.py", line 67, in <module>
+    outputs = model(images, diameter, abs_mag)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\model.py", line 41, in forward
+    x = self.pool(x)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\modules\pooling.py", line 166, in forward
+    return F.max_pool2d(input, self.kernel_size, self.stride,
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\_jit_internal.py", line 488, in fn
+    return if_false(*args, **kwargs)
+  File "C:\Users\Nayan_Patel\PycharmProjects\asteroid\venv\lib\site-packages\torch\nn\functional.py", line 791, in _max_pool2d
+    return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+KeyboardInterrupt
