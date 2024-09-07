@@ -37,7 +37,7 @@ class GraphWavModel(nn.Module):
         self.relu = nn.ReLU()
         self.flatten = nn.Flatten()
 
-    def forward(self, image, wav, alb):
+    def forward(self, image, wav):
         img_in = torch.cat([image, wav], dim=1)
         x = self.conv1(img_in)
         x = self.pool(x)
@@ -57,7 +57,7 @@ class GraphWavAlbModel(nn.Module):
         self.pool = nn.MaxPool2d(2)
         self.conv2 = nn.Conv2d(16, 32, kernel_size=3, stride=1, padding=1)
         self.conv3 = nn.Conv2d(32, 64, 3)
-        self.fc1 = nn.Linear(14400, num_types)
+        self.fc1 = nn.Linear(14400 + 16, num_types, dtype=torch.double)
         self.fcNums = nn.Linear(1, 16, dtype=torch.double)
         self.relu = nn.ReLU()
         self.flatten = nn.Flatten()
@@ -73,10 +73,9 @@ class GraphWavAlbModel(nn.Module):
         x = self.flatten(x)
 
         albedo = alb.view(-1, 1)
-        print(type(albedo[0]))
         nums = self.fcNums(albedo)
-        x = torch.cat([x, nums], dim=1)
 
+        x = torch.cat([x, nums], dim=1)
         x = self.fc1(x)
         return x
 

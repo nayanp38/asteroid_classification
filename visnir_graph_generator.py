@@ -64,44 +64,34 @@ def create_visnir_graph(file_path, extracted_number, visnir=True):
     plt.ylabel('')
     plt.title('')
 
-    plt.savefig(f'C:/Users/Nayan_Patel/PycharmProjects/asteroid/visnir_graphs_clustering/{extracted_number}.png')  # Save the temporary graph for download
+    plt.savefig(f'{extracted_number}.png')  # Save the temporary graph for download
 
     plt.clf()
 
 
-def augment_graph(label_root):
-    non_augmented_files = []
-    for filename in os.listdir(label_root):
-        # Check if the file name does not contain "augmented"
-        if "augmented" not in filename:
-            non_augmented_files.append(filename)
-
-    # all_files = os.listdir(label_root)
-    random_file = random.choice(non_augmented_files)
-    file_name = get_filename_from_number(random_file)
-
-    extracted_number = extract_number_from_filename(file_name)
-
-    file_path = os.path.join('smass2', file_name)
+def augment_graph(label_root, type):
+    file_path = os.path.join('data/averages_raw', f'{type}.txt')
 
     with open(file_path, 'r') as file:
         data = [line.split() for line in file.readlines()]
 
     x_values = [float(row[0]) for row in data]
     y_values = [float(row[1]) for row in data]
+    minim = min(y_values)
+    maxim = max(y_values)
 
-    variation = 0.01
+    y_avg = np.mean(y_values)
+    deviation = 0.4
 
-    # Introduce random variations
-    # augmented_y = [y + random.uniform(-variation, variation) for y in y_values]
-    # Gaussian method
+    # Standardize the graph to have x-axis between 0.4 and 1, and y-axis between 0.5 and 1.5
+
     mu = 0
     sigma = 0.015
     augmented_y = [y + np.random.normal(mu, sigma) for y in y_values]
 
     # Standardize the graph to have x-axis between 0.4 and 1, and y-axis between 0.5 and 1.5
-    x_min, x_max = 0.4, 1.0
-    y_min, y_max = 0.5, 1.5
+    x_min, x_max = 0.4, 2.5
+    y_min, y_max = y_avg - deviation, y_avg + deviation
 
     plt.plot(x_values, augmented_y)
     plt.xlim(x_min, x_max)
@@ -116,8 +106,11 @@ def augment_graph(label_root):
     plt.title('')
 
     # Save the augmented graph with a unique filename
-    output_directory = os.path.join('gaussian_graphs', getType(extracted_number))
-    augmented_filename = f'{extracted_number}_augmented_{len(os.listdir(output_directory))}.png'
+
+    output_directory = os.path.join('data/augmented_0.4', type)
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+    augmented_filename = f'{type}_augmented_{len(os.listdir(output_directory))}.png'
     augmented_filepath = os.path.join(output_directory, augmented_filename)
     plt.savefig(augmented_filepath)
     print(f'Created: {augmented_filepath}')
@@ -223,7 +216,7 @@ def lookup_type(number):
 input_dir = 'DeMeo2009data'
 
 # Specify the path to the directory where graphs will be stored
-output_dir = f"C:/Users/Nayan_Patel/PycharmProjects/asteroid/visnir_graphs_0.3_from_1"
+output_dir = f"data/cleaned_0.4"
 
 
 def generate_data(input_directory, output_directory):
@@ -243,7 +236,7 @@ def generate_data(input_directory, output_directory):
             print(extracted_number)
             create_visnir_graph(file_path, extracted_number)
 
-            # store_graph(f'{extracted_number}.png', graph_type, output_directory)
+            store_graph(f'{extracted_number}.png', graph_type, output_directory)
             count += 1
 
         if (count % 100) == 0:
@@ -254,7 +247,7 @@ def generate_data(input_directory, output_directory):
 def create_augmentations(directory, target_count):
     for label in os.listdir(directory):
         while len(os.listdir(os.path.join(directory, label))) < target_count:
-            augment_graph(os.path.join(directory, label))
+            augment_graph(os.path.join(directory, label), label)
 
 
 def delete_augmented_files(main_directory):
@@ -293,4 +286,4 @@ def rename_files_in_directory(directory):
 
 
 if __name__ == "__main__":
-    generate_data(input_dir, output_dir)
+    create_augmentations('data/augmented_0.4', 50)

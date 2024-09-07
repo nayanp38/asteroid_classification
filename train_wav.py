@@ -1,4 +1,4 @@
-from model import GraphModel, GraphWavAlbModel
+from model import GraphModel, GraphWavModel
 from graph_dataset import GraphDataset, GraphWavDataset
 import torch
 import torch.nn as nn
@@ -12,6 +12,7 @@ from PIL import Image
 from torchvision import transforms, datasets
 import wandb
 from sklearn.metrics import accuracy_score
+import numpy as np
 
 
 learning_rate = 0.001
@@ -30,7 +31,7 @@ run = wandb.init(
 '''
 
 deviation = 0.4
-graph_directory = f'C:/Users/Nayan_Patel/PycharmProjects/asteroid/visnir_graphs_{deviation}_from_avg_albedo'
+graph_directory = f'data/collapsed_0.4_from_avg'
 
 # Define transformations for the images
 transform = transforms.Compose([
@@ -50,17 +51,16 @@ val_dataloader = DataLoader(val_dataset, batch_size=4, shuffle=False)
 # Initialize the model, loss function, and optimizer
 num_classes = len(os.listdir(graph_directory))
 print(f'number of asteroid types: {num_classes}')
-model = GraphWavAlbModel(num_classes)
+model = GraphWavModel(num_classes)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 
 for epoch in range(num_epochs):
     model.train()
-    for images, wavs, albs, labels in train_dataloader:
-        print(albs)
+    for images, wavs, labels in train_dataloader:
         optimizer.zero_grad()
-        outputs = model(images, wavs, albs)
+        outputs = model(images, wavs)
         loss = criterion(outputs, labels)
         loss.backward()
         optimizer.step()
@@ -70,8 +70,8 @@ for epoch in range(num_epochs):
     total_val_samples = 0
 
     with torch.no_grad():
-        for val_images, val_wavs, val_albs, val_labels in val_dataloader:
-            val_outputs = model(val_images, val_wavs, val_albs)
+        for val_images, val_wavs, val_labels in val_dataloader:
+            val_outputs = model(val_images, val_wavs)
             _, predicted = torch.max(val_outputs, 1)
             val_loss += criterion(val_outputs, val_labels).item()
             total_val_samples += val_labels.size(0)
@@ -81,6 +81,6 @@ for epoch in range(num_epochs):
     print(f'Epoch [{epoch + 1}/{num_epochs}], Train Loss: {loss.item():.4f}, Val Loss: {average_val_loss:.4f}, Val Acc: {val_acc:.4f}')
     # wandb.log({"Val Loss": average_val_loss, "Loss": loss.item()})
     if epoch > 10:
-        torch.save(model.state_dict(), f'model_dicts/new_visnir_graphs_wavs_albedos_{deviation}_from_avg_epoch{epoch+1}.pth')
+        torch.save(model.state_dict(), f'model_dicts/3conv_0.4_collapsed_wav_{epoch+1}')
 
 # Save the trained model

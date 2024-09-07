@@ -1,4 +1,4 @@
-from model import GraphModel, GraphWavModel
+from model import GraphModel, GraphWavModel, GraphWavAlbModel
 from graph_dataset import GraphDataset, GraphWavDataset
 import torch
 from torch.utils.data import DataLoader
@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 deviation = 0.4
 epoch = 20
 
-graph_directory = f'C:/Users/Nayan_Patel/PycharmProjects/asteroid/visnir_graphs_0.4_from_avg'
+graph_directory = f'data/collapsed_0.4_from_avg'
 
 # Define transformations for the images
 transform = transforms.Compose([
@@ -27,7 +27,7 @@ test_dataloader = DataLoader(test_dataset, batch_size=4, shuffle=False)
 # Initialize the model and load the trained weights
 num_classes = len(os.listdir(graph_directory))
 model = GraphWavModel(num_classes)
-model.load_state_dict(torch.load(f'model_dicts/visnir_graphs_wavs_0.4_from_avg_epoch20.pth'))
+model.load_state_dict(torch.load(f'model_dicts/3conv_0.4_collapsed_wav_20'))
 model.eval()
 
 # Lists to store true labels and predicted labels

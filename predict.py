@@ -19,12 +19,12 @@ def preprocess_image(image_path):
     return image
 
 # Load the trained model
-model = GraphModel(18)  # Initialize the model with the correct number of classes
-model.load_state_dict(torch.load('model_dicts/graph_classifier_with_aug.pth'))
+model = GraphModel(24)  # Initialize the model with the correct number of classes
+model.load_state_dict(torch.load('model_dicts/3conv_0.4_collapsed_20'))
 model.eval()
 
 # Provide the path to the image you want to predict
-image_path = 'test_dir/test_L_2.png'
+image_path = 'test_dir/sq_png.png'
 
 # Preprocess the input image
 input_image = preprocess_image(image_path)
@@ -39,7 +39,7 @@ print(output)
 print(predicted_class_idx)
 
 
-graph_dataset = GraphDataset(root_dir='graphs')
+graph_dataset = GraphDataset(root_dir='data/collapsed_0.4_from_avg')
 predicted_class = graph_dataset.get_class_from_idx(predicted_class_idx)
 
 

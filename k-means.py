@@ -23,7 +23,7 @@ def load_images_from_directory(directory, target_size=(128, 128)):
 
 
 # Load your own dataset
-dataset_directory = 'C:/Users/Nayan_Patel/PycharmProjects/asteroid/visnir_graphs_clustering'
+dataset_directory = 'C:/Users/Nayan_Patel/OneDrive - Cary Academy/python_packups/data/visnir_graphs_clustering'
 x_train, image_paths = load_images_from_directory(dataset_directory, (128, 128))
 x_train = np.expand_dims(x_train, axis=-1)
 
@@ -59,7 +59,7 @@ encoded_imgs = encoder.predict(x_train)
 encoded_imgs_flat = encoded_imgs.reshape((len(x_train), -1))
 
 # Apply K-Means clustering
-n_clusters = 20
+n_clusters = 25
 kmeans = KMeans(n_clusters=n_clusters, random_state=42)
 kmeans.fit(encoded_imgs_flat)
 cluster_labels = kmeans.labels_

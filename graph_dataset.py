@@ -74,13 +74,16 @@ class GraphWavDataset(Dataset):
         # Collect paths to images and their corresponding labels
         self.samples = []
         self.wavs = []
+
+        '''
         self.albedos = []
 
         with open('demeo_albedos.txt', 'r') as file:
             data = [line.split() for line in file.readlines()]
 
         nums = [int(row[0]) for row in data]
-        measured_albedos = [np.float32(row[1]) for row in data]
+        measured_albedos = [float(row[1]) for row in data]
+        '''
 
         for class_name in self.classes:
             class_dir = os.path.join(root_dir, class_name)
@@ -94,15 +97,17 @@ class GraphWavDataset(Dataset):
 
             wavelet_transforms = [make_wavelet(f) for f in img_list if f.endswith('.png')]
 
+            '''
             pattern = re.compile(r'(\d+)\.png')
             asteroid_nums = [int(pattern.match(i).group(1)) for i in img_list]
             indices = [nums.index(i) for i in asteroid_nums]
             albs = [measured_albedos[i] for i in indices]
+            '''
 
             # Append (image path, class index) tuples to the samples list
             self.samples.extend([(path, class_idx) for path in image_paths])
             self.wavs.extend(wavelet_transforms)
-            self.albedos.extend(albs)
+            # self.albedos.extend(albs)
 
     def __len__(self):
         return len(self.samples)
@@ -115,8 +120,8 @@ class GraphWavDataset(Dataset):
             image = self.transform(image)
 
         wav = self.wavs[idx]
-        albedo = self.albedos[idx]
-        return image, wav, albedo, label
+        # albedo = self.albedos[idx]
+        return image, wav, label
 
     def get_class_from_idx(self, idx):
         return self.idx_to_class[idx]

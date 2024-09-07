@@ -1,10 +1,11 @@
 import os
 
 # Specify the path to the encompassing directory
-encompassing_directory = 'C:/Users/Nayan_Patel/PycharmProjects/asteroid/cluster_output'
+encompassing_directory = 'data/cleaned_0.4'
 
 # Iterate through sub-directories
 def count_files  (encompassing_directory):
+    total_files = 0
     for sub_directory in os.listdir(encompassing_directory):
         sub_directory_path = os.path.join(encompassing_directory, sub_directory)
 
@@ -15,6 +16,8 @@ def count_files  (encompassing_directory):
 
             # Print the sub-directory name and the number of files
             print(f"{sub_directory}: {files_count} files")
+            total_files += files_count
+    print(f"Total: {total_files} files")
 
 
 def count_files_without_augmented(main_directory):

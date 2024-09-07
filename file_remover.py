@@ -42,10 +42,10 @@ def move_files_to_main_directory(main_directory, target_files):
 
 
 # Example usage
-main_directory = 'C:/Users/Nayan_Patel/PycharmProjects/asteroid/visnir_graphs_0.4_from_avg_albedo'
-target_files = ['512.png', '402.png', '513.png', '532.png',
-                '570.png', '606.png', '625.png', '631.png', '653.png',
-                '661.png', '706.png', '716.png', '719.png', '720.png', '808.png', '999995.png',
-                '999996.png', '999997.png', '999998.png', '999999.png']
+main_directory = 'data/visnir_graphs_0.4_from_avg_albedo'
+target_files = ['6411.png', '36284.png', '4688.png', '5660.png',
+                '162781.png', '20790.png', '22771.png', '4995.png', '54690.png',
+                '6047.png', '985.png', '1374.png', '20786.png', '3949.png', '3198.png', '19127.png',
+                '18736.png', '24475.png', '98943.png', '3155.png', '4038.png']
 
 move_files_to_main_directory(main_directory, target_files)

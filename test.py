@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 deviation = 0.4
 epoch = 20
 
-graph_directory = f'C:/Users/Nayan_Patel/PycharmProjects/asteroid/visnir_graphs_{deviation}_from_avg'
+graph_path = 'data/augmented_0.4'
 
 # Define transformations for the images
 transform = transforms.Compose([
@@ -21,13 +21,14 @@ transform = transforms.Compose([
 ])
 
 # Create a dataset and dataloader for testing
-test_dataset = GraphDataset(root_dir=graph_directory, transform=transform)
+test_dataset = GraphDataset(root_dir=graph_path, transform=transform)
 test_dataloader = DataLoader(test_dataset, batch_size=4, shuffle=False)
 
 # Initialize the model and load the trained weights
-num_classes = len(os.listdir(graph_directory))
+# num_classes = len(os.listdir(graph_directory))
+num_classes = 24
 model = GraphModel(num_classes)
-model.load_state_dict(torch.load(f'model_dicts/new_visnir_graphs_{deviation}_from_avg_epoch16.pth'))
+model.load_state_dict(torch.load(f'model_dicts/3conv_0.4_collapsed_90split_18'))
 model.eval()
 
 # Lists to store true labels and predicted labels
@@ -56,5 +57,5 @@ cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix=confusion_matrix,
                                             display_labels=test_dataset.get_classes())
 
 cm_display.plot()
-# plt.savefig('confusion_v4_albedos.png')
+# plt.savefig(f'visnir_collapsed_confusion_{accuracy}.png')
 plt.show()
