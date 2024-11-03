@@ -78,7 +78,7 @@ class GraphWavDataset(Dataset):
         '''
         self.albedos = []
 
-        with open('demeo_albedos.txt', 'r') as file:
+        with open('demeo_albedos.txt.txt', 'r') as file:
             data = [line.split() for line in file.readlines()]
 
         nums = [int(row[0]) for row in data]
@@ -484,6 +484,93 @@ class FullWavDataset(Dataset):
 
     def get_abs_mags(self, image_files):
         # Placeholder for the get_abs_mag() function, replace with your actual implementation
+        abs_mags = [get_abs_mag(img) for img in image_files]
+
+        return abs_mags
+
+    def get_class_from_idx(self, idx):
+        return self.idx_to_class[idx]
+
+    def get_classes(self):
+        return self.classes
+
+
+class DeMeoDataset(Dataset):
+    def __init__(self, root_dir, transform=None):
+        self.root_dir = root_dir
+        self.transform = transform
+
+        # List all subdirectories (each subdirectory is a class)
+        self.classes = [d for d in os.listdir(root_dir) if os.path.isdir(os.path.join(root_dir, d))]
+
+        # Create a mapping from class name to class index
+        self.class_to_idx = {cls: idx for idx, cls in enumerate(self.classes)}
+        self.idx_to_class = {value: key for key, value in self.class_to_idx.items()}
+
+        # Collect paths to images and their corresponding labels
+        self.image_files = []
+        self.samples = []
+        self.aux_ref = []
+        self.diameters = []  # List to store diameters
+        self.abs_mags = []  # List to store absolute magnitudes
+        self.albedos = []
+
+
+        # Open the file in read mode and read the values into a list
+        with open('data/demeo_aux.txt', 'r') as file:
+            self.aux_ref = [float(line.strip()) for line in file.readlines()]
+
+        for class_name in self.classes:
+            class_dir = os.path.join(root_dir, class_name)
+            class_idx = self.class_to_idx[class_name]
+
+            # Collect paths to images in this class
+            for img in os.listdir(class_dir):
+                self.image_files += [img]
+                number = img[:-4]
+
+                with open('data/demeo_aux.txt', 'r') as f:
+                    for line in f:
+                        parts = line.strip().split()
+                        if parts[0] == number:
+                            self.abs_mags += [float(parts[1])]
+                            self.diameters += [float(parts[2])]
+                            self.albedos += [float(parts[3])]
+
+            image_paths = [os.path.join(class_dir, img) for img in self.image_files]
+
+            # Append (image path, class index) tuples to the samples list
+            self.samples.extend([(path, class_idx) for path in image_paths])
+
+    def __len__(self):
+        return len(self.samples)
+
+    def __getitem__(self, idx):
+        img_path, label = self.samples[idx]
+        image = Image.open(img_path).convert('L')  # Convert to grayscale
+
+        if self.transform:
+            image = self.transform(image)
+
+        # Get the corresponding diameter and absolute magnitude and albedo for this image
+        diameter = self.diameters[idx]
+        abs_mag = self.abs_mags[idx]
+        albedo = self.albedos[idx]
+        # img = self.image_files[idx]
+
+        return image, diameter, abs_mag, albedo, label
+
+    def get_albedos(self, image_files):
+        albedos = [get_albedo(img) for img in image_files]
+
+        return albedos
+
+    def get_diameters(self, image_files):
+        diameters = [get_diameter(img) for img in image_files]
+
+        return diameters
+
+    def get_abs_mags(self, image_files):
         abs_mags = [get_abs_mag(img) for img in image_files]
 
         return abs_mags

@@ -223,9 +223,11 @@ def generate_data(input_directory, output_directory):
     count = 0
     for file_name in os.listdir(input_directory):
         file_path = os.path.join(input_directory, file_name)
+        print(file_name)
 
         # Task 2: Extract a number from the filename
         extracted_number = extract_number_from_filename(file_name)
+        print(extracted_number)
 
         # Task 3: Get the type based on the extracted number
         graph_type = lookup_type(extracted_number)
@@ -286,4 +288,4 @@ def rename_files_in_directory(directory):
 
 
 if __name__ == "__main__":
-    create_augmentations('data/augmented_0.4', 50)
+    generate_data('smass2', 'data/NOT_VISNIR_test_set')

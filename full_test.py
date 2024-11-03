@@ -9,7 +9,7 @@ from torchvision import transforms
 import numpy
 import matplotlib.pyplot as plt
 
-graph_directory = 'graphs'
+graph_path = 'data/NOT_VISNIR_mithneos_graphs'
 
 # Define transformations for the images
 transform = transforms.Compose([
@@ -18,11 +18,12 @@ transform = transforms.Compose([
 ])
 
 # Create a dataset and dataloader for testing
-test_dataset = Original200Dataset(root_dir=graph_directory, transform=transform)
+test_dataset = Original200Dataset(root_dir=graph_path, transform=transform)
 test_dataloader = DataLoader(test_dataset, batch_size=4, shuffle=False)
 
 # Initialize the model and load the trained weights
-num_classes = len(os.listdir(graph_directory))
+num_classes = len(os.listdir(graph_path))
+print(num_classes)
 model = FullModel(num_classes)
 model.load_state_dict(torch.load('model_dicts/500_model/full_model_13'))
 model.eval()

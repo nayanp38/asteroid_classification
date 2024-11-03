@@ -1,3 +1,5 @@
+import os
+
 predicted_classifications = {}
 
 # Read the file and populate the dictionary
@@ -7,8 +9,21 @@ with open('classifications.txt', 'r') as file:
         key, value = line.strip().split(' ', 1)  # Using 1 to ensure only the first space splits the line
         predicted_classifications[key] = value
 
-# Print the dictionary to verify
-asteroid = '1747'
+
+data_path = os.listdir('../data/cleaned_0.4')
+training_nums = []
+for folder in data_path:
+    training_nums.extend(os.listdir(os.path.join('../data/cleaned_0.4', folder)))
+
+for index, num in enumerate(training_nums):
+    training_nums[index] = num[:-4]
+
+duplicates = []
+for num in training_nums:
+    if num in predicted_classifications:
+        duplicates.append(num)
+        del predicted_classifications[num]
+
 
 true_classifications = {}
 
@@ -37,7 +52,7 @@ print(predicted_classifications[asteroid])
 print(true_classifications[asteroid])
 '''
 
-correct_count = 7
+correct_count = 13
 total_count = 0
 
 # Dictionaries to store the count of appearances and correct predictions for each ID
@@ -76,19 +91,48 @@ for asteroid in predicted_classifications:
                 correct_id_count[processed_id] += 1
             else:
                 correct_id_count[processed_id] = 1
-
-    if corr:
-        print(f'{asteroid}: {pred}, {true} | CORRECT')
-    else:
-        print(f'{asteroid}: {pred}, {true} | WRONG')
+    if '"' in true:
+        if corr:
+            print(f'{asteroid}: {pred}, {true} | CORRECT')
+        else:
+            print(f'{asteroid}: {pred}, {true} | WRONG')
 
     total_count += 1
 
 print(f'{correct_count} / {total_count} = {correct_count / total_count}')
 
 # Print the summary of counts for each ID
+
 for id_key in id_count:
     correct_predictions = correct_id_count.get(id_key, 0)
     total_predictions = id_count[id_key]
     print(
         f'ID {id_key}: {correct_predictions} correct predictions out of {total_predictions} times ({correct_predictions / total_predictions:.2%} accuracy)')
+
+'''
+for id_key in id_count:
+    correct_predictions = correct_id_count.get(id_key, 0)
+    total_predictions = id_count[id_key]
+    print(id_key)
+
+print('\n')
+
+for id_key in id_count:
+    correct_predictions = correct_id_count.get(id_key, 0)
+    total_predictions = id_count[id_key]
+    print(correct_predictions)
+
+print('\n')
+
+for id_key in id_count:
+    correct_predictions = correct_id_count.get(id_key, 0)
+    total_predictions = id_count[id_key]
+    print(total_predictions)
+
+print('\n')
+
+for id_key in id_count:
+    correct_predictions = correct_id_count.get(id_key, 0)
+    total_predictions = id_count[id_key]
+    print(correct_predictions/total_predictions)
+'''

@@ -8,10 +8,10 @@ import torch
 from torchvision import transforms
 import numpy as np
 
-root = "C:/Users/Nayan_Patel/PycharmProjects/asteroid/"
+root = "C:/Users/Nayan_Patel/PycharmProjects/asteroid_classification/"
 
 app = Flask(__name__)
-spec_data_root = 'C:/Users/Nayan_Patel/PycharmProjects/asteroid/smass2'
+spec_data_root = 'C:/Users/Nayan_Patel/PycharmProjects/asteroid_classification/smass2'
 
 transform = transforms.Compose([
     transforms.Resize((128, 128)),
@@ -35,7 +35,7 @@ def classify_asteroid(graph_path, diameter, abs_mag, albedo):
 
     _, predicted = torch.max(outputs, 1)
 
-    class_dict = [d for d in os.listdir(root+'gaussian_graphs') if os.path.isdir(os.path.join(root+'gaussian_graphs', d))]
+    class_dict = ['A', 'B', 'C', 'Cg', 'Ch', 'D', 'E', 'K', 'L', 'M', 'O', 'P', 'Q', 'R', 'S', 'V', 'X', 'Z']
 
     return class_dict[predicted]
 
@@ -157,26 +157,28 @@ def spectrum():
 @app.route('/classify', methods=['GET'])
 def classify():
     try:
-        try:
-            id = int(request.args.get('id'))  # Try converting to integer
-        except ValueError:
-            id = request.args.get('id')
-        number = rocks.Rock(id).number
-        name = rocks.Rock(id).name
-        image = Image.open(get_spec_graph(number, name))
-        diam, abs_mag, alb = get_aux_data(number)
-        classification = classify_asteroid(image, diam, abs_mag, alb)
-        classification = 'Type: ' + classification
-        aux_data = ('Diameter: ' + str(diam) + ' km' +
-                    '\nAbsolute Magnitude: ' + str(abs_mag) +
-                    '\nAlbedo: ' + str(alb))
-        identity = ('Name: ' + str(name) + '\nNumber: ' + str(number))
-        return jsonify({
-            'classification': classification,
-            'aux_data': aux_data,
-            'identity': identity})
-    except:
-        return jsonify({'classification': 'Asteroid not found', 'aux_data': '', 'identity':''})
+        id = int(request.args.get('id'))  # Try converting to integer
+    except ValueError:
+        id = request.args.get('id') # if not an integer, that means try to search by asteroid name
+
+    number = rocks.Rock(id).number
+    if number is None: # if number is none, the rock doesn't exist
+         return jsonify({'classification': 'Asteroid not found', 'aux_data': '', 'identity':''})
+
+    name = rocks.Rock(id).name
+    image = Image.open(get_spec_graph(number, name))
+    diam, abs_mag, alb = get_aux_data(number)
+    classification = classify_asteroid(image, diam, abs_mag, alb)
+    classification = 'Type: ' + classification
+    aux_data = ('Diameter: ' + str(diam) + ' km' +
+                '\nAbsolute Magnitude: ' + str(abs_mag) +
+                '\nAlbedo: ' + str(alb))
+    identity = ('Name: ' + str(name) + '\nNumber: ' + str(number))
+    return jsonify({
+        'classification': classification,
+        'aux_data': aux_data,
+        'identity': identity})
+
 
 if __name__ == '__main__':
     app.run(debug=True)

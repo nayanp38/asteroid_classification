@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 deviation = 0.4
 epoch = 20
 
-graph_path = 'data/augmented_0.4'
+graph_path = 'data/NOT_VISNIR_mithneos_graphs'
 
 # Define transformations for the images
 transform = transforms.Compose([
@@ -28,7 +28,7 @@ test_dataloader = DataLoader(test_dataset, batch_size=4, shuffle=False)
 # num_classes = len(os.listdir(graph_directory))
 num_classes = 24
 model = GraphModel(num_classes)
-model.load_state_dict(torch.load(f'model_dicts/3conv_0.4_collapsed_90split_18'))
+model.load_state_dict(torch.load(f'model_dicts/final_model/full_model_13'))
 model.eval()
 
 # Lists to store true labels and predicted labels

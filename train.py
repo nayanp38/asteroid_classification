@@ -86,6 +86,6 @@ for epoch in range(num_epochs):
     print(f'Epoch [{epoch + 1}/{num_epochs}], Train Loss: {loss.item():.4f}, Val Loss: {average_val_loss:.4f}, Val Acc: {val_acc:.4f}')
     # wandb.log({"Val Loss": average_val_loss, "Loss": loss.item()})
     if epoch > 10:
-        torch.save(model.state_dict(), f'model_dicts/3conv_0.4_collapsed_90split_{epoch+1}')
+        torch.save(model.state_dict(), f'model_dicts/test_3conv_0.4_collapsed_90split_{epoch+1}')
 
 # Save the trained model

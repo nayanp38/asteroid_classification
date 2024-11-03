@@ -1,5 +1,5 @@
 import os
-
+import rocks
 
 def remove_extra_pth(directory):
     # Iterate over all the items in the main directory
@@ -20,5 +20,12 @@ def remove_extra_pth(directory):
 
 
 # Example usage
+
+'''
 main_directory = '../model_dicts'
 remove_extra_pth(main_directory)
+'''
+# '2009SQ104'
+number = '2008QS11'
+tax = rocks.Rock(number).taxonomy.class_.value
+print(tax)

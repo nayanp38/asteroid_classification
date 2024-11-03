@@ -2,10 +2,11 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import re
+import rocks
 
 root_path = '../data/mithneos_test'
 
-def create_visnir_graph(file_path, extracted_number, visnir=True):
+def create_visnir_graph(file_path, extracted_number, ast_type, visnir=True):
     with open(file_path, 'r') as file:
         data = [line.split() for line in file.readlines()]
     x_values = [float(row[0]) for row in data if len(row) > 1]
@@ -14,8 +15,8 @@ def create_visnir_graph(file_path, extracted_number, visnir=True):
     deviation = 0.4
 
     # Standardize the graph to have x-axis between 0.4 and 1, and y-axis between 0.5 and 1.5
-    x_min, x_max = 0.4, 2.5
-    y_min, y_max = y_avg - deviation, y_avg + deviation
+    x_min, x_max = 0.4, 1
+    y_min, y_max = 0.5, 1.5
 
     plt.plot(x_values, y_values)
     plt.xlim(x_min, x_max)
@@ -29,8 +30,10 @@ def create_visnir_graph(file_path, extracted_number, visnir=True):
     plt.ylabel('')
     plt.title('')
 
-    plt.savefig(f'../data/mithneos_graphs/{extracted_number}.png')  # Save the temporary graph for download
-
+    if os.path.isdir(f'../data/NOT_VISNIR_mithneos_graphs/{ast_type}/{extracted_number}.png'):
+        plt.savefig(f'../data/NOT_VISNIR_mithneos_graphs/{ast_type}/{extracted_number}.png')  # Save the temporary graph for download
+    else:
+        os.makedirs(f'../data/NOT_VISNIR_mithneos_graphs/{ast_type}/{extracted_number}.png')
     plt.clf()
 
 
@@ -53,11 +56,22 @@ def extract_id(filename):
     return None
 
 
+def getType(number):
+    try:
+        tax = rocks.Rock(number).taxonomy.class_.value if rocks.Rock(number).taxonomy.class_.value else None
+        return tax
+    except Exception as e:
+        print(f"Error in getType function: {e}")
+        return None
+
+
+
 filenames = os.listdir(root_path)
 count = 0
 for filename in filenames:
     extracted_id = extract_id(filename)
     print(extracted_id)
-    create_visnir_graph(os.path.join(root_path, filename), extracted_id)
+    ast_type = getType(extracted_id)
+    create_visnir_graph(os.path.join(root_path, filename), extracted_id, ast_type)
     count += 1
     print(count)
