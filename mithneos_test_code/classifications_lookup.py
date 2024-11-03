@@ -3,11 +3,13 @@ import os
 predicted_classifications = {}
 
 # Read the file and populate the dictionary
-with open('classifications.txt', 'r') as file:
+with open('../data/demeo_predictions.txt', 'r') as file:
     for line in file:
         # Split each line by space and assign key and value
         key, value = line.strip().split(' ', 1)  # Using 1 to ensure only the first space splits the line
         predicted_classifications[key] = value
+
+
 
 
 data_path = os.listdir('../data/cleaned_0.4')
@@ -23,6 +25,7 @@ for num in training_nums:
     if num in predicted_classifications:
         duplicates.append(num)
         del predicted_classifications[num]
+
 
 
 true_classifications = {}
@@ -43,6 +46,8 @@ for line in text.strip().split('\n'):
 
     # Always map key2 to the value
     true_classifications[key2.replace(' ', '')] = value
+
+
 
 # Print the resulting dictionary
 '''
@@ -108,6 +113,19 @@ for id_key in id_count:
     total_predictions = id_count[id_key]
     print(
         f'ID {id_key}: {correct_predictions} correct predictions out of {total_predictions} times ({correct_predictions / total_predictions:.2%} accuracy)')
+
+
+all_preds = []
+all_true = []
+for key in predicted_classifications:
+    all_preds += [predicted_classifications[key]]
+    all_true += [true_classifications[key]]
+
+print(len(all_preds), len(all_true))
+
+with open('../data/demeo_pred_true.txt', 'w') as f:
+    for item1, item2 in zip(all_preds, all_true):
+        f.write(f"{item1}\t{item2}\n")
 
 '''
 for id_key in id_count:

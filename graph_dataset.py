@@ -502,25 +502,19 @@ class DeMeoDataset(Dataset):
 
         # List all subdirectories (each subdirectory is a class)
         self.classes = [d for d in os.listdir(root_dir) if os.path.isdir(os.path.join(root_dir, d))]
-
         # Create a mapping from class name to class index
         self.class_to_idx = {cls: idx for idx, cls in enumerate(self.classes)}
         self.idx_to_class = {value: key for key, value in self.class_to_idx.items()}
 
         # Collect paths to images and their corresponding labels
-        self.image_files = []
         self.samples = []
-        self.aux_ref = []
         self.diameters = []  # List to store diameters
         self.abs_mags = []  # List to store absolute magnitudes
         self.albedos = []
 
 
-        # Open the file in read mode and read the values into a list
-        with open('data/demeo_aux.txt', 'r') as file:
-            self.aux_ref = [float(line.strip()) for line in file.readlines()]
-
         for class_name in self.classes:
+            self.image_files = []
             class_dir = os.path.join(root_dir, class_name)
             class_idx = self.class_to_idx[class_name]
 
@@ -536,7 +530,6 @@ class DeMeoDataset(Dataset):
                             self.abs_mags += [float(parts[1])]
                             self.diameters += [float(parts[2])]
                             self.albedos += [float(parts[3])]
-
             image_paths = [os.path.join(class_dir, img) for img in self.image_files]
 
             # Append (image path, class index) tuples to the samples list

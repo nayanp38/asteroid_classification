@@ -1,5 +1,5 @@
 from model import FullModel, FullWavModel
-from graph_dataset import FullDataset, FullWavDataset
+from graph_dataset import FullDataset, FullWavDataset, DeMeoDataset
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -10,17 +10,7 @@ from torchvision import transforms, datasets
 import wandb
 
 learning_rate = 0.001
-num_epochs = 15
-
-run = wandb.init(
-    # Set logging location
-    project="asteroid",
-    # Track params
-    config={
-        "learning_rate": 0.01,
-        "epochs": num_epochs,
-    },
-)
+num_epochs = 20
 
 def one_hot_encode(index, array_size):
     # Initialize an array of zeros
@@ -35,7 +25,7 @@ def one_hot_encode(index, array_size):
     return one_hot_array
 
 
-graph_directory = 'gaussian_graphs'
+graph_directory = 'data/cleaned_0.4'
 
 # Define transformations for the images
 transform = transforms.Compose([
@@ -44,7 +34,7 @@ transform = transforms.Compose([
 ])
 
 # Create a dataset and dataloader
-graph_dataset = FullWavDataset(root_dir=graph_directory, transform=transform)
+graph_dataset = DeMeoDataset(root_dir=graph_directory, transform=transform)
 
 train_dataset, val_dataset = train_test_split(graph_dataset, test_size=0.2, random_state=42)
 
@@ -55,16 +45,16 @@ val_dataloader = DataLoader(val_dataset, batch_size=4, shuffle=False)
 # Initialize the model, loss function, and optimizer
 num_classes = len(os.listdir(graph_directory))
 print(f'number of asteroid types: {num_classes}')
-model = FullWavModel(num_classes)
+model = FullModel(num_classes)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 
 for epoch in range(num_epochs):
     model.train()
-    for images, diameter, abs_mag, albedo, labels, wav in train_dataloader:
+    for images, diameter, abs_mag, albedo, labels in train_dataloader:
         optimizer.zero_grad()
-        outputs = model(images, diameter, abs_mag, albedo, wav)
+        outputs = model(images, diameter, abs_mag, albedo)
         # one_hot = [one_hot_encode(label, 18) for label in labels]
         # one_hot = torch.tensor(one_hot).double()
         # outputs = outputs.double()
@@ -88,6 +78,6 @@ for epoch in range(num_epochs):
     average_val_loss = val_loss / total_val_samples
     print(f'Epoch [{epoch + 1}/{num_epochs}], Train Loss: {loss.item():.4f}, Val Loss: {average_val_loss:.4f}')
     # wandb.log({"Val Loss": average_val_loss, "Loss": loss.item()})
-    torch.save(model.state_dict(), f'model_dicts/500_model/full_wav_model_{epoch+1}')
+    torch.save(model.state_dict(), f'model_dicts/demeo_aux/2_demeo+aux_{epoch+1}')
 
 # Save the trained model
