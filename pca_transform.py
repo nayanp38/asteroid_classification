@@ -145,11 +145,11 @@ def create_pca_augmentations(data_root, samples):
                     plt.clf()
 def main():
 
-    create_pca_augmentations('gaussian_graphs', 500)
+    # create_pca_augmentations('gaussian_graphs', 500)
 
-    '''
+
     # Step 1: Read data from text files in a directory
-    directory = 'gaussian_graphs/V'
+    directory = 'gaussian_graphs/L'
     X, length, file_dictionary = read_data_from_files(directory)
 
     # Step 2: Perform PCA using scikit-learn
@@ -187,9 +187,9 @@ def main():
     # Plot the resulting data versus the first column of the extracted text files
     plt.figure(figsize=(10, 6))
     for j in range(len(augmented_data)):
-        color = plt.cm.viridis(random.random())
+        color = plt.cm.winter(random.random())
         plt.plot(text_data[:length], augmented_data[j], alpha=0.5, linewidth=0.5, color=color)
-    x_min, x_max = 0.4, 1.0
+    x_min, x_max = 0.4, 2.5
     y_min, y_max = 0.5, 1.5
 
     plt.xlim(x_min, x_max)
@@ -203,28 +203,31 @@ def main():
     plt.ylabel('')
     plt.title('')
 
-    label_root = 'gaussian_graphs/V'
-
+    label_root = 'data/cleaned_0.4/L'
+    '''
     for i in range(42):
         display_one_graph(label_root)
 
     for i in range(158):
         display_one_augment(label_root)
+        
+    '''
 
     # plt.savefig('bigger_v_500_pca.png')
     plt.show()
     
     plt.figure(figsize=(10, 6))
-    for img in os.listdir('gaussian_graphs/A'):
-        spectrum = get_filename_from_number(img)
-        file_pth = os.path.join('smass2', spectrum)
+    for img in os.listdir(label_root):
+        number = img[:-4]
+        spectrum = f'{number}.png'
+        file_pth = os.path.join('DeMeo2009data', spectrum)
 
         with open(file_pth, 'r') as file:
             data = [line.split() for line in file.readlines()]
 
         x_values = [float(row[0]) for row in data]
         y_values = [float(row[1]) for row in data]
-        color = plt.cm.viridis(random.random())
+        color = plt.cm.winter(random.random())
         plt.plot(x_values, y_values, alpha=1, linewidth=0.5, color=color)
 
     plt.xlim(x_min, x_max)
@@ -238,7 +241,7 @@ def main():
     plt.ylabel('')
     plt.title('')
     plt.show()
-    '''
+
 
 
 if __name__ == "__main__":

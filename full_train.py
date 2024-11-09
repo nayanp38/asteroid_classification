@@ -78,6 +78,6 @@ for epoch in range(num_epochs):
     average_val_loss = val_loss / total_val_samples
     print(f'Epoch [{epoch + 1}/{num_epochs}], Train Loss: {loss.item():.4f}, Val Loss: {average_val_loss:.4f}')
     # wandb.log({"Val Loss": average_val_loss, "Loss": loss.item()})
-    torch.save(model.state_dict(), f'model_dicts/demeo_aux/2_demeo+aux_{epoch+1}')
+    torch.save(model.state_dict(), f'model_dicts/demeo_mithneos/v1_{epoch+1}')
 
 # Save the trained model

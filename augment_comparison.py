@@ -17,12 +17,12 @@ def display_images_side_by_side(original_path, augmented_path, pca_path):
 
     # Display the augmented image
     axs[1].imshow(augmented_image)
-    axs[1].set_title('With Gaussian Randomization Until 200 Images')
+    axs[1].set_title('With Gaussian Randomization Until 100 Images')
     axs[1].axis('off')
 
     # Display the PCA augmented image
     axs[2].imshow(pca_image)
-    axs[2].set_title('With PCA Augmentation Until 500 Images')
+    axs[2].set_title('With PCA Augmentation Until 200 Images')
     axs[2].axis('off')
 
     # Adjust spacing between subplots
@@ -36,7 +36,7 @@ def display_images_side_by_side(original_path, augmented_path, pca_path):
 
 # Replace 'path/to/original/image', 'path/to/augmented/image', and 'path/to/pca/image'
 # with the actual paths to your images
-original_image_path = 'bigger_v_no_augments.png'
-augmented_image_path = 'bigger_v_200_gaussian.png'
-pca_image_path = 'bigger_v_500_pca.png'
+original_image_path = 'augment_comparison_imgs/L_no_augments.png'
+augmented_image_path = 'augment_comparison_imgs/L_100_augments.png'
+pca_image_path = 'augment_comparison_imgs/L_200_pca.png'
 display_images_side_by_side(original_image_path, augmented_image_path, pca_image_path)

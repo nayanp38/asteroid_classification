@@ -8,8 +8,6 @@ from matplotlib import cbook, cm
 from visnir_graph_generator import get_filename_from_number
 
 # Generate some sample data (x and y values)
-# Replace this with your actual data
-# 446
 
 def cwt(x, y):
     # Perform Continuous Wavelet Transform (CWT)
@@ -49,6 +47,7 @@ def cwt3d(x, y):
     center = np.mean(y)
     bandwidth = np.ptp(y)
     print(bandwidth)
+    bandwidth = 3.5
 
     wavelet = f'cmor{bandwidth}-{center}'
     scales = np.arange(1, 128)  # Range of scales for wavelet analysis
@@ -205,7 +204,7 @@ def incwt(x, y):
 
     resized_coefficients = resize_coefficients(np.abs(coefficients), 128)
 
-    '''
+
     # Plot original signal and its CWT
     plt.figure(figsize=(12, 6))
 
@@ -227,9 +226,9 @@ def incwt(x, y):
     plt.tight_layout()
     # plt.savefig('model_in.png')
     plt.show()
-    '''
 
-    return np.expand_dims(resized_coefficients, axis=0).astype(np.float32)
+
+    # return np.expand_dims(resized_coefficients, axis=0).astype(np.float32)
 
 
 def resize_coefficients(coefficients, target_columns):
@@ -246,23 +245,17 @@ def resize_coefficients(coefficients, target_columns):
 
 
 def make_wavelet(png):
-    filename = get_filename_from_number(png)
-    with open(os.path.join('DeMeo2009data', filename), 'r') as file:
+
+    with open('DeMeo2009data/5.txt', 'r') as file:
         data = [line.split() for line in file.readlines()]
     wavelength = [float(row[0]) for row in data]
     reflectance = [float(row[1]) for row in data]
 
-    if 'augmented' in filename:
-        mu = 0
-        sigma = 0.015
-        aug_data = [y + np.random.normal(mu, sigma) for y in reflectance]
-        reflectance = aug_data
-
-    return incwt(wavelength, reflectance)
+    return cwt3d(wavelength, reflectance)
 
 
 if __name__ == '__main__':
-    print(make_wavelet('2.png').shape)
+    make_wavelet('2.png')
 
     """
     with open('DeMeo2009data/4451.txt', 'r') as file:

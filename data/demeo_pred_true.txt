@@ -11,7 +11,6 @@ Sr	Sr
 Sq	Sq
 Sq	Sqw
 S	S
-Q	U
 Sq	S_comp
 S	Sw
 Sr	Sr
@@ -55,7 +54,6 @@ S	L
 S	Sr
 Q	S_comp
 S	Sw
-D	U
 S	Sq
 Q	Q
 S	Sw
@@ -85,7 +83,6 @@ V	V
 D	D
 O	C
 Sq	S
-D	U
 D	Xe
 V	V
 D	L
@@ -216,7 +213,6 @@ Q	S
 S	S
 Q	C_comp
 S	S
-L	U
 S	L
 Q	Q
 Sq	Sq
