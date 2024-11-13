@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 deviation = 0.4
 epoch = 20
 
-graph_path = 'data/NOT_VISNIR_mithneos_graphs'
+graph_path = 'data/mithneos_graphs'
 
 # Define transformations for the images
 transform = transforms.Compose([
@@ -26,9 +26,9 @@ test_dataloader = DataLoader(test_dataset, batch_size=4, shuffle=False)
 
 # Initialize the model and load the trained weights
 # num_classes = len(os.listdir(graph_directory))
-num_classes = 24
+num_classes = 25
 model = GraphModel(num_classes)
-model.load_state_dict(torch.load(f'model_dicts/final_model/full_model_13'))
+model.load_state_dict(torch.load(f'model_dicts/demeo_mithneos/v1_20'))
 model.eval()
 
 # Lists to store true labels and predicted labels

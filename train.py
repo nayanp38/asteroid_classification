@@ -31,7 +31,7 @@ run = wandb.init(
 '''
 
 deviation = 0.4
-graph_directory = 'data/90_cleaned_0.4'
+graph_path = 'data/demeo_mithneos'
 
 # Define transformations for the images
 transform = transforms.Compose([
@@ -40,7 +40,7 @@ transform = transforms.Compose([
 ])
 
 # Create a dataset and dataloader
-graph_dataset = GraphDataset(root_dir=graph_directory, transform=transform)
+graph_dataset = GraphDataset(root_dir=graph_path, transform=transform)
 
 '''
 train_dataset, val_dataset = train_test_split(graph_dataset, test_size=0.2, random_state=42)
@@ -53,7 +53,7 @@ train_dataloader = DataLoader(graph_dataset, batch_size=4, shuffle=True)
 # val_dataloader = DataLoader(val_dataset, batch_size=4, shuffle=False)
 
 # Initialize the model, loss function, and optimizer
-num_classes = len(os.listdir(graph_directory))
+num_classes = len(os.listdir(graph_path))
 print(f'number of asteroid types: {num_classes}')
 model = GraphModel(num_classes)
 criterion = nn.CrossEntropyLoss()
@@ -86,6 +86,6 @@ for epoch in range(num_epochs):
     print(f'Epoch [{epoch + 1}/{num_epochs}], Train Loss: {loss.item():.4f}, Val Loss: {average_val_loss:.4f}, Val Acc: {val_acc:.4f}')
     # wandb.log({"Val Loss": average_val_loss, "Loss": loss.item()})
     if epoch > 10:
-        torch.save(model.state_dict(), f'model_dicts/test_3conv_0.4_collapsed_90split_{epoch+1}')
+        torch.save(model.state_dict(), f'model_dicts/demeo_mithneos/v1_{epoch + 1}')
 
 # Save the trained model
