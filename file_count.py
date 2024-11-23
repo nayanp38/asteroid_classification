@@ -1,10 +1,11 @@
 import os
 
 # Specify the path to the encompassing directory
-encompassing_path = 'data/demeo_mithneos'
+encompassing_path = 'data/no_marscrossers_demeo_mithneos'
 
 # Iterate through sub-directories
 def count_files  (encompassing_directory):
+    total_classes = len(os.listdir(encompassing_directory))
     total_files = 0
     for sub_directory in os.listdir(encompassing_directory):
         sub_directory_path = os.path.join(encompassing_directory, sub_directory)
@@ -18,6 +19,7 @@ def count_files  (encompassing_directory):
             print(f"{sub_directory}: {files_count} files")
             total_files += files_count
     print(f"Total: {total_files} files")
+    print(f'in {total_classes} classes')
 
 
 def count_files_without_augmented(main_directory):

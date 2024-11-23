@@ -31,7 +31,7 @@ run = wandb.init(
 '''
 
 deviation = 0.4
-graph_path = 'data/demeo_mithneos'
+graph_path = 'data/no_marscrossers_demeo_mithneos'
 
 # Define transformations for the images
 transform = transforms.Compose([
@@ -86,6 +86,6 @@ for epoch in range(num_epochs):
     print(f'Epoch [{epoch + 1}/{num_epochs}], Train Loss: {loss.item():.4f}, Val Loss: {average_val_loss:.4f}, Val Acc: {val_acc:.4f}')
     # wandb.log({"Val Loss": average_val_loss, "Loss": loss.item()})
     if epoch > 10:
-        torch.save(model.state_dict(), f'model_dicts/demeo_mithneos/v1_{epoch + 1}')
+        torch.save(model.state_dict(), f'model_dicts/no_mars_crossers/v2_{epoch + 1}')
 
 # Save the trained model

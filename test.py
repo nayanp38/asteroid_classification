@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 deviation = 0.4
 epoch = 20
 
-graph_path = 'data/mithneos_graphs'
+graph_path = 'data/mars_crossers'
 
 # Define transformations for the images
 transform = transforms.Compose([
@@ -28,7 +28,7 @@ test_dataloader = DataLoader(test_dataset, batch_size=4, shuffle=False)
 # num_classes = len(os.listdir(graph_directory))
 num_classes = 25
 model = GraphModel(num_classes)
-model.load_state_dict(torch.load(f'model_dicts/demeo_mithneos/v1_20'))
+model.load_state_dict(torch.load(f'model_dicts/no_mars_crossers/v1_18'))
 model.eval()
 
 # Lists to store true labels and predicted labels
