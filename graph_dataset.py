@@ -573,3 +573,54 @@ class DeMeoDataset(Dataset):
 
     def get_classes(self):
         return self.classes
+
+class TestDataset(Dataset):
+    def __init__(self, root_dir, transform=None):
+        self.root_dir = root_dir
+        self.transform = transform
+
+        # List all subdirectories (each subdirectory is a class)
+        self.classes = [d for d in os.listdir(root_dir) if os.path.isdir(os.path.join(root_dir, d))]
+
+        # Create a mapping from class name to class index
+        self.class_to_idx = {cls: idx for idx, cls in enumerate(self.classes)}
+        self.idx_to_class = {value: key for key, value in self.class_to_idx.items()}
+        print(self.classes)
+        print(self.class_to_idx)
+        print(self.idx_to_class)
+
+        # Collect paths to images and their corresponding labels
+        self.samples = []
+        self.numbers = []
+        for class_name in self.classes:
+            class_dir = os.path.join(root_dir, class_name)
+            class_idx = self.class_to_idx[class_name]
+
+            # Collect paths to images in this class
+            image_files = [f for f in os.listdir(class_dir) if f.endswith('.png')]
+            image_paths = [os.path.join(class_dir, img) for img in image_files]
+            numbers = [f[:-4] for f in os.listdir(class_dir) if f.endswith('.png')]
+
+            # Append (image path, class index) tuples to the samples list
+            self.samples.extend([(path, class_idx) for path in image_paths])
+            self.numbers.extend(numbers)
+
+
+    def __len__(self):
+        return len(self.samples)
+
+    def __getitem__(self, idx):
+        img_path, label = self.samples[idx]
+        image = Image.open(img_path).convert('L')  # Convert to grayscale
+        number = self.numbers[idx]
+
+        if self.transform:
+            image = self.transform(image)
+
+        return image, label, number
+
+    def get_class_from_idx(self, idx):
+        return self.idx_to_class[idx]
+
+    def get_classes(self):
+        return self.classes

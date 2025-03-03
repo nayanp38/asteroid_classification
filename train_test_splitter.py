@@ -20,7 +20,7 @@ def move_files(source_dir, dest_dir):
             num_files = len(files)
 
             # Calculate number of files to move
-            num_to_move = round(num_files * 0.10)
+            num_to_move = round(num_files * 0.20)
             if num_to_move == 0:
                 continue  # Skip sub-directories with fewer than 5 files
 
@@ -42,8 +42,8 @@ def move_files(source_dir, dest_dir):
 
 
 # Define the source directory and destination directory
-source_path = 'data/90_cleaned_0.4'
-dest_path = 'data/10_cleaned_0.4'
+source_path = 'data/demeo_mithneos_80'
+dest_path = 'data/demeo_mithneos_20'
 
 # Call the function
 for dir in os.listdir(source_path):

@@ -1,7 +1,7 @@
 import os
 
 # Specify the path to the encompassing directory
-encompassing_path = 'data/no_marscrossers_demeo_mithneos'
+encompassing_path = 'data/demeo_mithneos_20'
 
 # Iterate through sub-directories
 def count_files  (encompassing_directory):

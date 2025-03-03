@@ -130,7 +130,7 @@ cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix=confusion_matrix,
 #favorites: GnBu, YlGnBu
 cm_display.plot(cmap=plt.cm.GnBu)
 plt.xticks(rotation=70)  # Rotate x-axis labels for readability
-plt.savefig(f'images/v3_no_xn_visnir_mithneos_collapsed_confusion.png', bbox_inches='tight')
+# plt.savefig(f'images/v3_no_xn_visnir_mithneos_collapsed_confusion.png', bbox_inches='tight')
 plt.show()
 
 '''
