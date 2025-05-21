@@ -1,10 +1,11 @@
 import os
 
 # Specify the path to the encompassing directory
-encompassing_path = 'data/demeo_mithneos_20'
+encompassing_path = 'data/demeo_mithneos'
 
 # Iterate through sub-directories
 def count_files  (encompassing_directory):
+    count_dict = {}
     total_classes = len(os.listdir(encompassing_directory))
     total_files = 0
     for sub_directory in os.listdir(encompassing_directory):
@@ -17,9 +18,12 @@ def count_files  (encompassing_directory):
 
             # Print the sub-directory name and the number of files
             print(f"{sub_directory}: {files_count} files")
+            count_dict[sub_directory] = files_count
             total_files += files_count
     print(f"Total: {total_files} files")
     print(f'in {total_classes} classes')
+
+    return count_dict
 
 
 def count_files_without_augmented(main_directory):
@@ -44,4 +48,15 @@ def count_files_without_augmented(main_directory):
     print("\nTotal count across all subdirectories:", total_count)
 
 
-count_files(encompassing_path)
+count_demeo_mithneos = count_files(encompassing_path)
+
+'''
+count_difference = {}
+
+for classification in count_demeo_mithneos:
+    if classification != 'Xn':
+        count_difference[classification] = count_demeo_mithneos[classification] - count_demeo[classification]
+
+for classification in count_difference:
+    print(f'{classification}: {count_difference[classification]}')
+'''
